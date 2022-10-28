@@ -1,0 +1,33 @@
+.header
+    padding: 10px 65px
+    position: fixed
+    left: 0
+    width: 100%
+    top: 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+    z-index: 10
+    color: rgba(255, 255, 255, 0.7)
+    &__logo 
+        width: 260px
+        img 
+            width: 100%
+            height: auto
+    &__menu
+        display: flex
+        align-items: center
+        gap: 20px
+        &-item 
+            transition: 0.3s all
+            &.active, &:hover 
+                color: $theme-color
+    &__right
+        display: flex
+        align-items: center
+    &__lang
+        margin-left: 40px
+        display: flex
+        align-items: center
+        span 
+            margin-right: 10px

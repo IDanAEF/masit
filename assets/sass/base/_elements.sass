@@ -1,0 +1,81 @@
+.text
+    &_fw400
+        font-weight: 400
+    &_fw600
+        font-weight: 600
+    &_white
+        color: #fff
+    &_white-1 
+        color: #E2F0F8
+    &_green
+        color: $theme-color
+    &_ffMont, &_ffMont *
+        font-family: 'Montserrat', 'Russo', sans-serif
+    &_ffHelv, &_ffHelv *
+        font-family: 'Helvetica', 'Russo', sans-serif
+    &_fz16
+        font-size: 16px
+        line-height: 24px
+    &_fz16-1
+        font-size: 16px
+        line-height: 100%
+    &_fz24
+        font-size: 24px
+        line-height: 38px
+    &_upper
+        text-transform: uppercase
+    &_ls005
+        letter-spacing: 0.05em
+    &_ls01
+        letter-spacing: 0.1em
+    &_center 
+        text-align: center
+.title
+    &_fz30
+        font-size: 30px
+        line-height: 38px
+    &_fz60
+        font-size: 60px
+        line-height: 70px
+    &_fz60-1
+        font-size: 60px
+        line-height: 90px
+body 
+    background: #131925
+    padding: 100px 2.6% 2.6%
+.button
+    background: none
+    border: none
+    cursor: pointer
+    display: inline-block
+    &_green
+        background: $theme-color
+        padding: 21px 25px
+        color: rgba(0, 0, 0, 0.7)
+        border: 0.3px solid rgba(0, 0, 0, 0.7)
+    &_border
+        color: #CCCC00
+        padding: 30px 64px
+        position: relative
+        &::before, &::after
+            content: ''
+            position: absolute
+            display: block
+            width: 1px
+            height: 100%
+            top: 0
+            background: linear-gradient(to top, #fff 26.31%, transparent 26.31% 73.69%, #fff 73.69% 100%)
+        &::before
+            left: 0
+        &::after
+            right: 0
+        .top, .bott
+            position: absolute
+            height: 1px 
+            left: 0
+            width: 100%
+            background: linear-gradient(to right, #fff 7.11%, transparent 7.11% 92.89%, #fff 92.89% 100%)
+        .top
+            top: 0
+        .bott
+            bottom: 0
