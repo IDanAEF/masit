@@ -16,6 +16,7 @@
                 Смотреть проекты
                 <div class="bott"></div>
             </a>
+            <?php include('assets/images/block1.svg') ?>
         </div>
     </section>
     <section class="main__page page__design">
@@ -28,6 +29,7 @@
                     Мы анализируем ваш бизнес, чтобы разработать веб-сайт, который повышает коэффициент конверсии и дает положительные результаты.
                 </div>
             </div>
+            <?php include('assets/images/block2.svg') ?>
         </div>
     </section>
     <section class="main__page page__brand">
@@ -40,6 +42,7 @@
                     Мы используем различные стратегии брендинга, чтобы помочь нашим клиентам завоевать доверие и лояльность клиентов, предоставляя им конкурентное преимущество.
                 </div>
             </div>
+            <?php include('assets/images/block3.svg') ?>
         </div>
     </section>
     <section class="main__page page__cross">
@@ -52,6 +55,7 @@
                     Наши пользовательские веб-приложения сокращают время простоя и повышают эффективность, и пользователям не нужно устанавливать их на свои жесткие диски.
                 </div>
             </div>
+            <?php include('assets/images/block4.svg') ?>
         </div>
     </section>
     <section class="main__page page__mobile">
@@ -64,6 +68,7 @@
                     Наши пользовательские мобильные приложения одинаково хорошо работают на разных размерах экрана и устройствах, поэтому вы можете привлечь более широкую аудиторию.
                 </div>
             </div>
+            <?php include('assets/images/block5.svg') ?>
         </div>
     </section>
     <section class="main__page page__mark">
@@ -76,12 +81,52 @@
                     Наши пользовательские мобильные приложения одинаково хорошо работают на разных размерах экрана и устройствах, поэтому вы можете привлечь более широкую аудиторию.
                 </div>
             </div>
+            <?php include('assets/images/block6.svg') ?>
+        </div>
+    </section>
+    <section class="main__page page__news">
+        <div class="circle circle_944 circle1"></div>
+        <div class="circle circle_1000 circle2"></div>
+        <div class="main__page-wrap wrap">
+            <div class="pretitle text_fz24 text_white text_ffMont text_center">Ознакомьтесь с нашими</div>
+            <h2 class="title_fz60 text_white-1 text_center text_upper text_ls01">последними тенденциями в области цифровых технологий</h2>
+            <div class="blocks subtitle">
+                <div class="blocks__item">
+                    <div class="blocks__item-number">01</div>
+                    <div class="blocks__item-content">
+                        <h3 class="blocks__item-title title_fz30 text_upper text_ls005">Что такое Google Custom Intent Audiences? 5 способов ее использования</h3>
+                        <div class="blocks__item-undertitle text_fz16 text_ffMont">Поговорка “вы можете привести лошадь к воде, но вы не можете заставить ее пить” особенно актуальна при рекламе товаров...</div>
+                    </div>
+                </div>
+                <div class="blocks__item">
+                    <div class="blocks__item-number">02</div>
+                    <div class="blocks__item-content">
+                        <h3 class="blocks__item-title title_fz30 text_upper text_ls005">Что такое Google Custom Intent Audiences? 5 способов ее использования</h3>
+                        <div class="blocks__item-undertitle text_fz16 text_ffMont">Поговорка “вы можете привести лошадь к воде, но вы не можете заставить ее пить” особенно актуальна при рекламе товаров...</div>
+                    </div>
+                </div>
+                <div class="blocks__item">
+                    <div class="blocks__item-number">03</div>
+                    <div class="blocks__item-content">
+                        <h3 class="blocks__item-title title_fz30 text_upper text_ls005">Что такое Google Custom Intent Audiences? 5 способов ее использования</h3>
+                        <div class="blocks__item-undertitle text_fz16 text_ffMont">Поговорка “вы можете привести лошадь к воде, но вы не можете заставить ее пить” особенно актуальна при рекламе товаров...</div>
+                    </div>
+                </div>
+                <div class="blocks__item">
+                    <div class="blocks__item-number">04</div>
+                    <div class="blocks__item-content">
+                        <h3 class="blocks__item-title title_fz30 text_upper text_ls005">Что такое Google Custom Intent Audiences? 5 способов ее использования</h3>
+                        <div class="blocks__item-undertitle text_fz16 text_ffMont">Поговорка “вы можете привести лошадь к воде, но вы не можете заставить ее пить” особенно актуальна при рекламе товаров...</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="main__page page__like">
         <div class="circle circle_1000 circle1"></div>
         <div class="circle circle_944 circle2"></div>
         <div class="main__page-wrap wrap text_center">
+            <?php include('assets/images/block9.svg') ?>
             <h2 class="title title_fz60 text_white-1 text_upper text_ls01">Нравится То, Что Вы Видите?</h2>
             <button class="header__button button button_green text_fz16-1 text_ffHelv text_ls005 subtitle">Раcсчитать стоимость</button>
             <div class="bottom text text_fz16 text_ffMont">

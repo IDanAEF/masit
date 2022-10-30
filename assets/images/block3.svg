@@ -1151,21 +1151,21 @@
 <path opacity="0.5" d="M326.839 338.055L498.263 590.305L286.789 259.609L326.839 338.055Z" fill="#339EFF"/>
 </g>
 <g style="mix-blend-mode:multiply">
-<path style="mix-blend-mode:multiply" d="M234.463 720.354C234.463 725.494 383.832 729.699 568.21 729.699C752.588 729.699 901.957 725.517 901.957 720.354C901.957 715.192 752.588 711.01 568.21 711.01C383.832 711.01 234.463 715.215 234.463 720.354Z" fill="url(#paint0_radial_64_33611)"/>
+<path style="mix-blend-mode:multiply" d="M234.463 720.354C234.463 725.494 383.832 729.699 568.21 729.699C752.588 729.699 901.957 725.517 901.957 720.354C901.957 715.192 752.588 711.01 568.21 711.01C383.832 711.01 234.463 715.215 234.463 720.354Z" fill="url(#paint0_radial_64_33610)"/>
 </g>
 <defs>
-<radialGradient id="paint0_radial_64_33611" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(568.132 721.846) rotate(180) scale(333.334 9.41745)">
+<radialGradient id="paint0_radial_64_33610" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(568.132 721.846) rotate(180) scale(333.334 9.41745)">
 <stop/>
-<stop offset="0.06" stop-color="#292929"/>
-<stop offset="0.15" stop-color="#5E5E5C"/>
-<stop offset="0.2" stop-color="#747472"/>
-<stop offset="0.28" stop-color="#999997"/>
-<stop offset="0.36" stop-color="#B8B8B7"/>
-<stop offset="0.45" stop-color="#D2D2D1"/>
-<stop offset="0.54" stop-color="#E6E6E6"/>
-<stop offset="0.65" stop-color="#F4F4F4"/>
-<stop offset="0.78" stop-color="#FDFDFC"/>
-<stop offset="1" stop-color="white"/>
+<stop offset="0.06" stop-opacity="0.93"/>
+<stop offset="0.15" stop-opacity="0.83"/>
+<stop offset="0.2" stop-opacity="0.71"/>
+<stop offset="0.28" stop-opacity="0.53"/>
+<stop offset="0.36" stop-opacity="0.44"/>
+<stop offset="0.45" stop-opacity="0.4"/>
+<stop offset="0.54" stop-opacity="0.33"/>
+<stop offset="0.65" stop-opacity="0.12"/>
+<stop offset="0.78" stop-opacity="0.13"/>
+<stop offset="1" stop-opacity="0"/>
 </radialGradient>
 </defs>
 </svg>
