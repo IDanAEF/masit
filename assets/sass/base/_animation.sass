@@ -7,28 +7,59 @@
             &.top
                 opacity: 1
                 transform: translateY(0px)
-// .main
-//     &__page
-//         &.active
-//             svg
-//                 path 
-//                     stroke-dasharray: 2000
-//                     stroke-dashoffset: 2000
-//                     stroke: #4EAAC6
-//                     fill-opacity: 0
-//                     stroke-opacity: 0
-//                     stroke-width: 0.7
-//                     animation: dash 22s ease-in-out
-//                     animation-delay: 1s
-//                     animation-fill-mode: forwards
+.fade
+    opacity: 0
+    transition: 0.8s all 0.5s ease-in-out
+    &-top 
+        transition: 0.8s all 1s ease-in-out
+        transform: translateY(70px)
+    &-bott
+        transition: 0.8s all 1.2s ease-in-out
+        transform: translateY(-70px)
+    &-left
+        transition: 0.8s all 1s ease-in-out
+        transform: translateX(70px)
+    &-right
+        transition: 0.8s all 1.2s ease-in-out
+        transform: translateX(-70px)
+.main
+    &__page.active
+        .fade
+            opacity: 1
+            &-bott, &-top 
+                transform: translateY(0px)
+            &-left, &-right 
+                transform: translateX(0px)
+    .page
+        &__news
+            .blocks__item-content::after
+                width: 0%
+                transition: 2s all 1.5s ease-in-out
+            &.active
+                .blocks__item-content::after
+                    width: 100%
+.main
+    &__page
+        &.active
+            svg.path-anim
+                path 
+                    stroke-dasharray: 2000
+                    stroke-dashoffset: 2000
+                    stroke: #4EAAC6
+                    fill-opacity: 0
+                    stroke-opacity: 0
+                    stroke-width: 0.7
+                    animation: dash 7s ease-in-out
+                    animation-delay: 1s
+                    animation-fill-mode: forwards
 
 @keyframes header-top
     0%
         opacity: 0
-        transform: translateY(-70px)
+        transform: translateX(-50%) translateY(-70px)
     100%
         opacity: 1
-        transform: translateY(0px)
+        transform: translateX(-50%) translateY(0px)
 @keyframes dash 
     0% 
         stroke-opacity: 0

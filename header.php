@@ -16,9 +16,16 @@
 </head>
 <body>
     <header class="header text_fz16-1 text_ls005 text_ffHelv">
-        <a href="/" class="header__logo">
-            <img src="/assets/images/green_logo.svg" alt="logo">
-        </a>
+        <div class="header__left">
+            <div class="header__burg">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="/" class="header__logo">
+                <img src="/assets/images/green_logo.svg" alt="logo">
+            </a>
+        </div>
         <ul class="header__menu">
             <?php
                 foreach($pagesData as $key => $item) {

@@ -34,11 +34,11 @@ const pages = () => {
             });
         });
 
-        window.addEventListener('wheel', (e) => {
+        const moveAnim = (cord) => {
             let move = true;
 
             if (!list) {
-                if (e.deltaY >= 0) {
+                if (cord >= 0) {
                     if (num == mainPages.length - 1) {
                         move = false;
                     } else {
@@ -60,6 +60,24 @@ const pages = () => {
                         list = false;
                     }, 1500);
                 }
+            }
+        }
+
+        window.addEventListener('wheel', (e) => {
+            moveAnim(e.deltaY);
+        });
+
+        let startPos = 0;
+        
+        window.addEventListener('touchstart', (e) => {
+            startPos = e.changedTouches[0].screenY;
+        });
+    
+        window.addEventListener('touchend', (e) => {
+            if (startPos - e.changedTouches[0].screenY > 50) {
+                moveAnim(1);
+            } else if (startPos - e.changedTouches[0].screenY < -50) {
+                moveAnim(-1);
             }
         });
     } catch (e) {
