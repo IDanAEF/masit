@@ -184,7 +184,7 @@
             <h2 class="title title_fz60 text_white-1 text_upper text_ls01 fade fade-top">Нравится То, Что Вы Видите?</h2>
             <button class="button button_green text_fz16-1 text_ffHelv text_ls005 subtitle fade fade-bott">Раcсчитать стоимость</button>
             <div class="bottom text text_fz16 text_ffMont fade">
-                <span>© 2022 Top Notch Dezigns. Все права защищены.</span>
+                <span>© <?=date('Y')?> Mas It. Все права защищены.</span>
                 <div>
                     <a href="/career/">Карьера</a>
                     <a href="/conf/">Политика конфиденциальности</a>

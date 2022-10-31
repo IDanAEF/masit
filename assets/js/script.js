@@ -90,7 +90,9 @@ __webpack_require__.r(__webpack_exports__);
 const pages = () => {
   try {
     const mainPages = document.querySelectorAll('.main__page'),
-          dotsField = document.querySelector('.main__dots');
+          dotsField = document.querySelector('.main__dots'),
+          menuItems = document.querySelectorAll('.header__menu-item'),
+          promoBtn = document.querySelector('.page__promo .button');
 
     for (let i = 0; i < mainPages.length; i++) {
       const newDot = document.createElement('div');
@@ -106,8 +108,10 @@ const pages = () => {
     const setPage = () => {
       dots.forEach(item => item.classList.remove('active'));
       mainPages.forEach(item => item.classList.remove('active'));
+      menuItems.forEach(item => item.classList.remove('active'));
       dots[num].classList.add('active');
       mainPages[num].classList.add('active');
+      menuItems[num].classList.add('active');
     };
 
     setPage();
@@ -116,6 +120,18 @@ const pages = () => {
         num = i;
         setPage();
       });
+    });
+    menuItems.forEach((item, i) => {
+      item.addEventListener('click', e => {
+        e.preventDefault();
+        num = i;
+        setPage();
+      });
+    });
+    promoBtn.addEventListener('click', e => {
+      e.preventDefault();
+      num = 1;
+      setPage();
     });
 
     const moveAnim = cord => {

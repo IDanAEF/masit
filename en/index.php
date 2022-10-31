@@ -184,7 +184,7 @@
             <h2 class="title title_fz60 text_white-1 text_upper text_ls01 fade fade-top">Do you like what you see?</h2>
             <button class="button button_green text_fz16-1 text_ffHelv text_ls005 subtitle fade fade-bott">Сalculate the cost</button>
             <div class="bottom text text_fz16 text_ffMont fade">
-                <span>© 2022 Top Notch Dezigns. All rights reserved</span>
+                <span>© <?=date('Y')?> Mas It. All rights reserved</span>
                 <div>
                     <a href="/en/career/">Career</a>
                     <a href="/en/conf/">Privacy Policy</a>
