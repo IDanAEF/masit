@@ -47,5 +47,32 @@
         margin-left: 40px
         display: flex
         align-items: center
+        cursor: pointer
+        overflow: hidden
+        a, span, img 
+            transition: 0.5s all
+        a 
+            position: absolute
+            top: -20px
+            &::after
+                content: ''
+                position: absolute
+                background-color: $theme-color
+                height: 1px
+                width: 0%
+                bottom: -3px
+                left: 0
+                transition: 0.5s all
+        a:hover 
+            &::after
+                width: 100%
         span 
             margin-right: 10px
+        &.active
+            a 
+                top: 50%
+                transform: translateY(-50%)
+            span 
+                transform: translateY(20px)
+            img
+                transform: rotate(180deg)

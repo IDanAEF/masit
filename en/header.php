@@ -6,7 +6,7 @@
     $title = $page && $page['title'] ? $page['title'] : $page['name'];  
 ?>
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,7 +22,7 @@
                 <span></span>
                 <span></span>
             </div>
-            <a href="/" class="header__logo">
+            <a href="/en/" class="header__logo">
                 <img src="/assets/images/green_logo.svg" alt="logo">
             </a>
         </div>
@@ -31,7 +31,7 @@
                 foreach($pagesData as $key => $item) {
                     ?>
                     <li class="header__menu-item<?=($_SERVER['REQUEST_URI'] == $key ? ' active' : '')?>">
-                        <a href="<?=$key?>">
+                        <a href="/en/<?=$key?>">
                             <?=$item['name']?>
                         </a>
                     </li>
@@ -40,10 +40,10 @@
             ?>
         </ul>
         <div class="header__right">
-            <button class="header__button button button_green">Раcсчитать стоимость</button>
+            <button class="header__button button button_green">Сalculate the cost</button>
             <div class="header__lang">
-                <a href="/en/" class="text_green">EN</a>
-                <span>RU</span>
+                <a href="/" class="text_green">RU</a>
+                <span>EN</span>
                 <img src="/assets/images/plate_arrow_down.svg" alt="down_arrow">
             </div>
         </div>

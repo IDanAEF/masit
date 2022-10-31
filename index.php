@@ -16,7 +16,8 @@
                 Смотреть проекты
                 <div class="bott"></div>
             </a>
-            <?php include('assets/images/block1.svg') ?>
+            <img src="/assets/images/block1.svg" alt="" class="svg fade">
+            <?php //include('assets/images/block1.svg') ?>
         </div>
     </section>
     <section class="main__page page__design">
@@ -68,7 +69,8 @@
                     Наши пользовательские мобильные приложения одинаково хорошо работают на разных размерах экрана и устройствах, поэтому вы можете привлечь более широкую аудиторию.
                 </div>
             </div>
-            <?php include('assets/images/block5.svg') ?>
+            <img src="/assets/images/block5.svg" alt="" class="svg fade">
+            <?php //include('assets/images/block5.svg') ?>
         </div>
     </section>
     <section class="main__page page__mark">
@@ -81,7 +83,8 @@
                     Наши пользовательские мобильные приложения одинаково хорошо работают на разных размерах экрана и устройствах, поэтому вы можете привлечь более широкую аудиторию.
                 </div>
             </div>
-            <?php include('assets/images/block6.svg') ?>
+            <img src="/assets/images/block6.svg" alt="" class="svg fade">
+            <?php //include('assets/images/block6.svg') ?>
         </div>
     </section>
     <section class="main__page page__proc">
@@ -92,27 +95,32 @@
                 <div class="page__proc-step left">
                     <div class="page__proc-step-number">01</div>
                     <span>исследование</span>
-                    <?php include('assets/images/trace_right1.svg'); ?>
+                    <img src="/assets/images/trace_right1.svg" alt="" class="svg">
+                    <?php //include('assets/images/trace_right1.svg'); ?>
                 </div>
                 <div class="page__proc-step right">
                     <div class="page__proc-step-number">02</div>
                     <span>открытие</span>
-                    <?php include('assets/images/trace_left1.svg'); ?>
+                    <img src="/assets/images/trace_left1.svg" alt="" class="svg">
+                    <?php //include('assets/images/trace_left1.svg'); ?>
                 </div>
                 <div class="page__proc-step left">
                     <div class="page__proc-step-number">03</div>
                     <span>содержание</span>
-                    <?php include('assets/images/trace_right2.svg'); ?>
+                    <img src="/assets/images/trace_right2.svg" alt="" class="svg">
+                    <?php //include('assets/images/trace_right2.svg'); ?>
                 </div>
                 <div class="page__proc-step right">
                     <div class="page__proc-step-number">04</div>
                     <span>Дизайн</span>
-                    <?php include('assets/images/trace_left2.svg'); ?>
+                    <img src="/assets/images/trace_left2.svg" alt="" class="svg">
+                    <?php //include('assets/images/trace_left2.svg'); ?>
                 </div>
                 <div class="page__proc-step left">
                     <div class="page__proc-step-number">05</div>
                     <span>разработка</span>
-                    <?php include('assets/images/trace_right3.svg'); ?>
+                    <img src="/assets/images/trace_right3.svg" alt="" class="svg">
+                    <?php //include('assets/images/trace_right3.svg'); ?>
                 </div>
                 <div class="page__proc-step right">
                     <div class="page__proc-step-number">06</div>
@@ -125,7 +133,8 @@
                     Наш шестиступенчатый процесс позволяет вам расслабиться и сосредоточиться на том, что важно: на вашем бизнесе.
                 </div>
             </div>
-            <?php include('assets/images/gray_logo.svg'); ?>
+            <img src="/assets/images/gray_logo.svg" alt="" class="svg gray_logo fade">
+            <?php //include('assets/images/gray_logo.svg'); ?>
         </div>
     </section>
     <section class="main__page page__news">
@@ -170,7 +179,8 @@
         <div class="circle circle_1000 circle1"></div>
         <div class="circle circle_944 circle2"></div>
         <div class="main__page-wrap wrap text_center">
-            <?php include('assets/images/block9.svg') ?>
+            <?php //include('assets/images/block9.svg') ?>
+            <img src="/assets/images/block9.svg" alt="" class="svg fade">
             <h2 class="title title_fz60 text_white-1 text_upper text_ls01 fade fade-top">Нравится То, Что Вы Видите?</h2>
             <button class="button button_green text_fz16-1 text_ffHelv text_ls005 subtitle fade fade-bott">Раcсчитать стоимость</button>
             <div class="bottom text text_fz16 text_ffMont fade">
