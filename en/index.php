@@ -6,6 +6,7 @@
     <section class="main__page page__promo">
         <div class="circle circle_915 circle1"></div>
         <div class="circle circle_810 circle2"></div>
+        <div class="circle circle_810 circle3 dont-move"></div>
         <div class="main__page-wrap wrap text_center">
             <h1 class="title title_fz60-1 text_white-1 text_upper text_ls01 fade fade-top">WEB DESIGN<br>AND DIGITAL MARKETING AGENCY</h1>
             <h2 class="subtitle text_fz24 text_fw600 text_ffMont text_upper text_white fade fade-bott">
@@ -23,6 +24,8 @@
     <section class="main__page page__design">
         <div class="circle circle_1000 circle1"></div>
         <div class="circle circle_810 circle2"></div>
+        <div class="circle circle_1126 circle3 dont-move"></div>
+        <div class="circle circle_810 circle4 dont-move"></div>
         <div class="main__page-wrap wrap wrap_left wrap_center">
             <div class="main__page-text text-field_width">
                 <h2 class="title title_fz60 text_white-1 text_upper text_ls01 fade fade-right">STUNNING AND CREATIVE <span class="text_green">DESIGN</span></h2>
@@ -30,12 +33,14 @@
                 We analyse your business to develop a website that increases conversion rates and produces positive results
                 </div>
             </div>
-            <?php include('../assets/images/block2.svg') ?>
+            <img src="/assets/images/block2.svg" alt="" class="svg fade path-anim">
+            <?php //include('../assets/images/block2.svg') ?>
         </div>
     </section>
     <section class="main__page page__brand">
         <div class="circle circle_1126 circle1"></div>
         <div class="circle circle_1000 circle2"></div>
+        <div class="circle circle_1126 circle3 dont-move"></div>
         <div class="main__page-wrap wrap wrap_right wrap_center">
             <div class="main__page-text text-field_width">
                 <h2 class="title title_fz60 text_white-1 text_upper text_ls01 fade fade-left">TRANSITION TO A NEW LEVEL of <span class="text_green">branding</span></h2>
@@ -43,12 +48,14 @@
                 We use various branding strategies to help our clients gain trust and loyalty of their customers by giving them a competitive advantage.
                 </div>
             </div>
-            <?php include('../assets/images/block3.svg') ?>
+            <img src="/assets/images/block3.svg" alt="" class="svg fade path-anim">
+            <?php //include('../assets/images/block3.svg') ?>
         </div>
     </section>
     <section class="main__page page__cross">
         <div class="circle circle_1000 circle1"></div>
         <div class="circle circle_1126 circle2"></div>
+        <div class="circle circle_1126 circle3 dont-move"></div>
         <div class="main__page-wrap wrap wrap_left wrap_center">
             <div class="main__page-text">
                 <h2 class="title title_fz60 text_white-1 text_upper text_ls01 fade fade-right">CROSS-PLATFORM <span class="text_green">DEVELOPMENT</span> EXPERIENCE</h2>
@@ -56,12 +63,15 @@
                 Our custom web applications reduce downtime and increase efficiency, and users do not need to install them on their hard drives
                 </div>
             </div>
-            <?php include('../assets/images/block4.svg') ?>
+            <img src="/assets/images/block4.svg" alt="" class="svg fade">
+            <?php //include('../assets/images/block4.svg') ?>
         </div>
     </section>
     <section class="main__page page__mobile">
         <div class="circle circle_1126 circle1"></div>
         <div class="circle circle_1000 circle2"></div>
+        <div class="circle circle_1126 circle3 dont-move"></div>
+        <div class="circle circle_1126 circle4 dont-move"></div>
         <div class="main__page-wrap wrap wrap_right wrap_center">
             <div class="main__page-text text-field_width">
                 <h2 class="title title_fz60 text_white-1 text_upper text_ls01 fade fade-left">INCREASE REVENUE WITH <span class="text_green">MOBILE APPS</span></h2>
@@ -76,6 +86,8 @@
     <section class="main__page page__mark">
         <div class="circle circle_1000 circle1"></div>
         <div class="circle circle_1126 circle2"></div>
+        <div class="circle circle_944 circle3 dont-move"></div>
+        <div class="circle circle_1126 circle4 dont-move"></div>
         <div class="main__page-wrap wrap wrap_left wrap_center">
             <div class="main__page-text text-field_width">
                 <h2 class="title title_fz60 text_white-1 text_upper text_ls01 fade fade-right">BENEFIT FROM RESULTS-ORIENTED <span class="text_green">DIGITAL MARKETING</span></h2>
@@ -90,6 +102,8 @@
     <section class="main__page page__proc">
         <div class="circle circle_944 circle1"></div>
         <div class="circle circle_1000 circle2"></div>
+        <div class="circle circle_1126 circle3 dont-move"></div>
+        <div class="circle circle_944 circle4 dont-move"></div>
         <div class="main__page-wrap wrap wrap_right fade">
             <div class="page__proc-steps title_fz30 text_upper text_ls005">
                 <div class="page__proc-step left">
@@ -140,6 +154,7 @@
     <section class="main__page page__news">
         <div class="circle circle_944 circle1"></div>
         <div class="circle circle_1000 circle2"></div>
+        <div class="circle circle_944 circle3 dont-move"></div>
         <div class="main__page-wrap wrap">
             <div class="pretitle text_fz24 text_white text_ffMont text_center fade fade-top">Check out</div>
             <h2 class="title_fz60 text_white-1 text_center text_upper text_ls01 fade fade-bott">our latest digital trends</h2>

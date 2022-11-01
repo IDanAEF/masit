@@ -78,7 +78,7 @@ const pages = () => {
 
                     setTimeout(() => {
                         list = false;
-                    }, 1500);
+                    }, 900);
                 }
             }
         }

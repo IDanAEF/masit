@@ -6,6 +6,7 @@
     <section class="main__page page__promo">
         <div class="circle circle_915 circle1"></div>
         <div class="circle circle_810 circle2"></div>
+        <div class="circle circle_810 circle3 dont-move"></div>
         <div class="main__page-wrap wrap text_center">
             <h1 class="title title_fz60-1 text_white-1 text_upper text_ls01 fade fade-top">АГЕНТСТВО ВЕБ-ДИЗАЙНА<br>И ЦИФРОВОГО МАРКЕТИНГА</h1>
             <h2 class="subtitle text_fz24 text_fw600 text_ffMont text_upper text_white fade fade-bott">
@@ -23,6 +24,8 @@
     <section class="main__page page__design">
         <div class="circle circle_1000 circle1"></div>
         <div class="circle circle_810 circle2"></div>
+        <div class="circle circle_1126 circle3 dont-move"></div>
+        <div class="circle circle_810 circle4 dont-move"></div>
         <div class="main__page-wrap wrap wrap_left wrap_center">
             <div class="main__page-text text-field_width">
                 <h2 class="title title_fz60 text_white-1 text_upper text_ls01 fade fade-right">ПОТРЯСАЮЩИЙ И КРЕАТИВНЫЙ <span class="text_green">ДИЗАЙН</span></h2>
@@ -30,12 +33,14 @@
                     Мы анализируем ваш бизнес, чтобы разработать веб-сайт, который повышает коэффициент конверсии и дает положительные результаты.
                 </div>
             </div>
-            <?php include('assets/images/block2.svg') ?>
+            <img src="/assets/images/block2.svg" alt="" class="svg fade path-anim">
+            <?php //include('assets/images/block2.svg') ?>
         </div>
     </section>
     <section class="main__page page__brand">
         <div class="circle circle_1126 circle1"></div>
         <div class="circle circle_1000 circle2"></div>
+        <div class="circle circle_1126 circle3 dont-move"></div>
         <div class="main__page-wrap wrap wrap_right wrap_center">
             <div class="main__page-text text-field_width">
                 <h2 class="title title_fz60 text_white-1 text_upper text_ls01 fade fade-left">ПЕРЕХОД НА НОВЫЙ УРОВЕНЬ <span class="text_green">брендинга</span></h2>
@@ -43,12 +48,14 @@
                     Мы используем различные стратегии брендинга, чтобы помочь нашим клиентам завоевать доверие и лояльность клиентов, предоставляя им конкурентное преимущество.
                 </div>
             </div>
-            <?php include('assets/images/block3.svg') ?>
+            <img src="/assets/images/block3.svg" alt="" class="svg fade path-anim">
+            <?php //include('assets/images/block3.svg') ?>
         </div>
     </section>
     <section class="main__page page__cross">
         <div class="circle circle_1000 circle1"></div>
         <div class="circle circle_1126 circle2"></div>
+        <div class="circle circle_1126 circle3 dont-move"></div>
         <div class="main__page-wrap wrap wrap_left wrap_center">
             <div class="main__page-text">
                 <h2 class="title title_fz60 text_white-1 text_upper text_ls01 fade fade-right">ОПЫТ КРОСС-ПЛАТФОРМЕННОЙ <span class="text_green">веб-разработки</span></h2>
@@ -56,12 +63,15 @@
                     Наши пользовательские веб-приложения сокращают время простоя и повышают эффективность, и пользователям не нужно устанавливать их на свои жесткие диски.
                 </div>
             </div>
-            <?php include('assets/images/block4.svg') ?>
+            <img src="/assets/images/block4.svg" alt="" class="svg fade">
+            <?php //include('assets/images/block4.svg') ?>
         </div>
     </section>
     <section class="main__page page__mobile">
         <div class="circle circle_1126 circle1"></div>
         <div class="circle circle_1000 circle2"></div>
+        <div class="circle circle_1126 circle3 dont-move"></div>
+        <div class="circle circle_1126 circle4 dont-move"></div>
         <div class="main__page-wrap wrap wrap_right wrap_center">
             <div class="main__page-text text-field_width">
                 <h2 class="title title_fz60 text_white-1 text_upper text_ls01 fade fade-left">УВЕЛИЧЬТЕ ДОХОД С ПОМОЩЬЮ <span class="text_green">мобильных приложений</span></h2>
@@ -76,6 +86,8 @@
     <section class="main__page page__mark">
         <div class="circle circle_1000 circle1"></div>
         <div class="circle circle_1126 circle2"></div>
+        <div class="circle circle_944 circle3 dont-move"></div>
+        <div class="circle circle_1126 circle4 dont-move"></div>
         <div class="main__page-wrap wrap wrap_left wrap_center">
             <div class="main__page-text text-field_width">
                 <h2 class="title title_fz60 text_white-1 text_upper text_ls01 fade fade-right">ИЗВЛЕКАЙТЕ ВЫГОДУ ИЗ <span class="text_green">цифрового маркетинга</span>, ОРИЕНТИРОВАННОГО НА РЕЗУЛЬТАТ</h2>
@@ -90,6 +102,8 @@
     <section class="main__page page__proc">
         <div class="circle circle_944 circle1"></div>
         <div class="circle circle_1000 circle2"></div>
+        <div class="circle circle_1126 circle3 dont-move"></div>
+        <div class="circle circle_944 circle4 dont-move"></div>
         <div class="main__page-wrap wrap wrap_right fade">
             <div class="page__proc-steps title_fz30 text_upper text_ls005">
                 <div class="page__proc-step left">
@@ -140,6 +154,7 @@
     <section class="main__page page__news">
         <div class="circle circle_944 circle1"></div>
         <div class="circle circle_1000 circle2"></div>
+        <div class="circle circle_944 circle3 dont-move"></div>
         <div class="main__page-wrap wrap">
             <div class="pretitle text_fz24 text_white text_ffMont text_center fade fade-top">Ознакомьтесь с нашими</div>
             <h2 class="title_fz60 text_white-1 text_center text_upper text_ls01 fade fade-bott">последними тенденциями в области цифровых технологий</h2>

@@ -31,12 +31,14 @@ const animation = () => {
         window.addEventListener('mousemove', (e) => {
             if (window.innerWidth >= 1024) {
                 document.querySelector('.main__page.active').querySelectorAll('.circle').forEach(item => {
-                    item.style.top = `${+item.getAttribute('data-top') + (e.pageY - window.innerHeight / 2) / 6}px`;
+                    if (!item.classList.contains('dont-move')) {
+                        item.style.top = `${+item.getAttribute('data-top') + (e.pageY - window.innerHeight / 2) / 5}px`;
     
-                    if (item.classList.contains('circle2')) {
-                        item.style.left = `${+item.getAttribute('data-left') + (e.pageX - window.innerWidth / 2) / 13}px`;
-                    } else {
-                        item.style.right = `${+item.getAttribute('data-right') - (e.pageX - window.innerWidth / 2) / 13}px`;
+                        if (item.classList.contains('circle2')) {
+                            item.style.left = `${+item.getAttribute('data-left') + (e.pageX - window.innerWidth / 2) / 11}px`;
+                        } else {
+                            item.style.right = `${+item.getAttribute('data-right') - (e.pageX - window.innerWidth / 2) / 11}px`;
+                        }
                     }
                 });
             }
