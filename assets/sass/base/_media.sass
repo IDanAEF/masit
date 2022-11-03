@@ -1,5 +1,10 @@
 @media (min-width: 2200px) 
     .text
+        &_fz12 
+            font-size: 17px
+        &_fz14 
+            font-size: 18px
+            line-height: 26px
         &_fz16
             font-size: 20px
             line-height: 28px
@@ -12,37 +17,60 @@
         &_fz30
             font-size: 40px
             line-height: 48px
+        &_fz40 
+            font-size: 50px
+            line-height: 58px
+        &_fz48
+            font-size: 58px
+            line-height: 70px
         &_fz60
             font-size: 80px
             line-height: 90px
         &_fz60-1
             font-size: 80px
             line-height: 110px
+    .circle
+        &_810
+            width: 910px
+            height: 910px
+        &_915
+            width: 1015px
+            height: 1015px
+        &_944
+            width: 1044px
+            height: 1044px
+        &_1000
+            width: 1100px
+            height: 1100px
+        &_1126
+            width: 1226px
+            height: 1226px
+    .text-field
+        &_width
+            max-width: 1005px
+    .wrap
+        &_left 
+            padding-left: 90px
+        &_right 
+            padding-right: 80px
+    .modal
+        #message 
+            .wrap
+                &.success
+                    .line
+                        width: 600px
+            form 
+                padding: 65px
+                width: 592px
+                .form_block
+                    margin-top: 33px
+                    &.checkbox
+                        span 
+                            width: 30px
+                            height: 30px
+                button 
+                    margin: 35px 0px
     .main 
-        .circle
-            &_810
-                width: 910px
-                height: 910px
-            &_915
-                width: 1015px
-                height: 1015px
-            &_944
-                width: 1044px
-                height: 1044px
-            &_1000
-                width: 1100px
-                height: 1100px
-            &_1126
-                width: 1226px
-                height: 1226px
-        .text-field
-            &_width
-                max-width: 1005px
-        .wrap
-            &_left 
-                padding-left: 90px
-            &_right 
-                padding-right: 80px
         &__page
             max-width: 2240px
             left: 50%
@@ -99,7 +127,9 @@
                 &-steps 
                     left: 5%
 @media (max-width: 1760px), (max-height: 1000px)
-    body 
+    .main .page__news .blocks__item .new-news .prev
+        width: 166px
+    body, .modal 
         padding: 90px 2.5% 2.6%
     .text
         &_fz16
@@ -110,16 +140,30 @@
         &_fz24
             font-size: 21px
             line-height: 35px
+    .main .page__news .detail
+        padding-top: 44px
+    .main .page__news .detail h3
+        margin-left: 66px
     .title
         &_fz30
             font-size: 24px
             line-height: 32px
+        &_fz40 
+            font-size: 30px
+            line-height: 38px
+        &_fz48
+            font-size: 38px
+            line-height: 50px
         &_fz60
             font-size: 48px
             line-height: 58px
         &_fz60-1
             font-size: 48px
             line-height: 78px
+    .text-field_width
+        max-width: 750px
+    .subtitle
+        margin-top: 27px
     .button
         &_green
             padding: 15px
@@ -130,11 +174,35 @@
             margin-left: 28px
         &__logo 
             width: 205px
+    .modal
+        &__close 
+            padding: 22px
+            top: 4px
+            right: 4px
+            border: 13px solid rgba(19, 25, 37, 0.2)
+            &:hover 
+                border: 13px solid rgba(19, 25, 37, 0.7)
+        #message
+            .wrap
+                padding-top: 59px
+                &.success
+                    .succ_text
+                        margin-top: 21px
+            .line
+                margin-top: 18px
+                width: 453px !important
+            form 
+                padding: 35px
+                width: 395px
+                button 
+                    margin: 25px 0px
+                .form_block
+                    &.label-top
+                        margin-top: 17px
+                        &.active
+                            label 
+                                bottom: 81%
     .main
-        .text-field_width
-            max-width: 750px
-        .subtitle
-            margin-top: 27px
         &__dots 
             right: 18px
             &-item 
@@ -182,31 +250,59 @@
                         svg, .svg 
                             width: 230px
 @media (max-width: 1600px) 
-    body 
+    body, .modal 
         padding: 90px 1.5% 1.6%
     .header
         padding: 10px 40px
-    .main
-        .circle
-            &_810
-                width: 710px
-                height: 710px
-            &_915
-                width: 815px
-                height: 815px
-            &_944
-                width: 844px
-                height: 844px
-            &_1000
-                width: 900px
-                height: 900px
-            &_1126
-                width: 1026px
-                height: 1026px
+    .main .page__news .detail h3
+        margin-left: 20px
+    .main .page__news .detail h4
+        margin: 12px 0px
+    .circle
+        &_810
+            width: 710px
+            height: 710px
+        &_915
+            width: 815px
+            height: 815px
+        &_944
+            width: 844px
+            height: 844px
+        &_1000
+            width: 900px
+            height: 900px
+        &_1126
+            width: 1026px
+            height: 1026px
+        &_1507
+            width: 1207px
+            height: 1207px
+        &_1272
+            width: 1072px
+            height: 1072px
 @media (max-width: 1400px), (max-height: 770px) 
-    body 
+    .main .page__news .blocks__item .new-news .prev
+        width: 148px
+    .main .page__news .detail .cont_block
+        margin-top: 0
+    .main .page__news .detail p
+        margin-bottom: 5px
+    .main .page__news .detail h4
+        n: 8px 0px
+    .main .page__news .detail .text_cont
+        width: 78%
+    .main .page__news .detail .prev
+        width: 20%
+    .main .page__news .detail
+        padding-top: 16px
+    .main .page__news .detail .blocks__item-number
+        display: none
+    body, .modal 
         padding: 80px 1.5% 1.5%
     .text
+        &_fz14 
+            font-size: 12px
+            line-height: 20px
         &_fz24 
             font-size: 18px
             line-height: 33px
@@ -220,6 +316,17 @@
         &_fz30 
             font-size: 22px
             line-height: 28px
+    .text-field_width
+        max-width: 627px
+    .modal
+        #message
+            .line
+                margin-top: 11px
+                width: 371px !important
+            .wrap
+                &.success
+                    .succ_text
+                        margin-top: 13px
     .header
         &__logo 
             width: 180px
@@ -229,16 +336,14 @@
             margin-left: 15px
             span 
                 margin-right: 6px
+    .page__like 
+        .wrap 
+            padding: 21px 43px
     .main
-        .text-field_width
-            max-width: 627px
         .page
             &__cross 
                 .main__page-text
                     max-width: 500px
-            &__like 
-                .wrap 
-                    padding: 21px 43px
             &__news 
                 .blocks
                     &__item 
@@ -248,7 +353,20 @@
                         &-undertitle 
                             margin-top: 13px
 @media (max-width: 1260px) 
+    .title_fz20
+        font-size: 18px
+        line-height: 27px
+    .main .page__news .blocks__item .new-news .prev
+        width: 125px
+    .main .page__news .detail h3
+        margin-left: 0
+    .main .page__news .detail .prev
+        display: none
+    .main .page__news .detail .text_cont
+        width: 100%
     .text
+        &_fz12 
+            font-size: 10px
         &_fz16
             font-size: 13px
             line-height: 21px
@@ -261,38 +379,79 @@
         &_fz30
             font-size: 18px
             line-height: 22px
+        &_fz40 
+            font-size: 23px
+            line-height: 31px
+        &_fz48
+            font-size: 31px
+            line-height: 41px
         &_fz60, &_fz60-1
             font-size: 33px
             line-height: 42px
     .button
         &_border
             padding: 18px 42px 
+    .subtitle
+        margin-top: 16px
+    .text-field_width
+        max-width: 440px
+    .circle
+        &_810
+            width: 610px
+            height: 610px
+        &_915
+            width: 715px
+            height: 715px
+        &_944
+            width: 744px
+            height: 744px
+        &_1000
+            width: 800px
+            height: 800px
+        &_1126
+            width: 926px
+            height: 926px
+        &_1507
+            width: 1007px
+            height: 1007px
+        &_1272
+            width: 1072px
+            height: 1072px
+    .modal
+        &__close 
+            padding: 16px
+            top: 7px
+            right: 5px
+            border: 11px solid rgba(19,25,37,.2)
+            &:hover 
+                border: 11px solid rgba(19,25,37,.7)
+        #message
+            .wrap
+                padding-top: 34px
+            form 
+                padding: 24px
+                width: 320px
+                input, textarea
+                    height: 26px
+                textarea
+                    height: 72px
+                button 
+                    margin: 16px 0px
+                .form_block
+                    &.checkbox
+                        span 
+                            width: 17px
+                            height: 17px
     .header
         &__menu 
             display: none
         &__burg
             display: flex
+    .page__like
+        .bottom
+            div
+                gap: 23px
     .main
-        .subtitle
-            margin-top: 16px
-        .text-field_width
-            max-width: 440px
-        .circle
-            &_810
-                width: 610px
-                height: 610px
-            &_915
-                width: 715px
-                height: 715px
-            &_944
-                width: 744px
-                height: 744px
-            &_1000
-                width: 800px
-                height: 800px
-            &_1126
-                width: 926px
-                height: 926px
         &__dots 
             right: 11px
             &-item 
@@ -329,10 +488,6 @@
                         &-number 
                             font-size: 68px
                             line-height: 80px
-            &__like
-                .bottom
-                    div
-                        gap: 23px
             &__proc 
                 .wrap
                     padding: 53px 3% 33px
@@ -353,35 +508,95 @@
                         width: 45%
                         right: 16px
                         bottom: 11px
+    .main__page.static
+        margin-bottom: 30px
+    .news
+        .pred
+            margin: 30px 0px
+        &__promo 
+            padding: 53px
+        &__main 
+            padding: 40px
+            h3 
+                margin: 70px 0px 20px
+            .dash_block
+                margin-bottom: 34px
+                padding-left: 20px
+            .bread
+                margin-bottom: 49px
+            .text_block
+                margin-bottom: 38px
+                p 
+                    margin-bottom: 20px
+            .img_block
+                margin: 38px 0px
+                height: 450px
+                padding: 40px
 @media (max-width: 992px)
-    body 
+    body, .modal 
         padding: 58px 1.5% 1.5%
+    .new-news-cont h2 
+        font-size: 19px
+        line-height: 20px
     .button
         &_green 
             padding: 11px
+    .circle
+        &_810
+            width: 410px
+            height: 410px
+        &_915
+            width: 515px
+            height: 515px
+        &_944
+            width: 544px
+            height: 544px
+        &_1000
+            width: 600px
+            height: 600px
+        &_1126
+            width: 826px
+            height: 826px
+        &_1507
+            width: 907px
+            height: 907px
+        &_1272
+            width: 972px
+            height: 972px
+    .modal
+        #message
+            .back
+                left: -88px
+                top: 71px
+                width: auto
+                height: 90%
+                max-width: 100%
     .header
         padding: 5px 29px
         &__logo 
             width: 148px
         &__burg 
             margin-right: 11px 
+    .page__like 
+        .bottom
+            flex-wrap: wrap
+            justify-content: center
+            gap: 10px 25px
+            div 
+                gap: 25px
+    .title_fz48
+        font-size: 26px
+        line-height: 35px
+    .news__main .img_block
+        margin: 30px 0px
+        height: 400px
+    .main .page__news .blocks__item .new-news .text-left
+        width: 100%
+    .main .page__news .blocks__item .new-news .prev
+        width: 125px
+        z-index: -1
+        opacity: 0.3
     .main
-        .circle
-            &_810
-                width: 410px
-                height: 410px
-            &_915
-                width: 515px
-                height: 515px
-            &_944
-                width: 544px
-                height: 544px
-            &_1000
-                width: 600px
-                height: 600px
-            &_1126
-                width: 826px
-                height: 826px
         .page
             &__promo 
                 .wrap
@@ -433,47 +648,88 @@
                     top: unset !important
                     left: 0 !important
                     bottom: unset !important
-            &__like 
-                .bottom
-                    flex-wrap: wrap
-                    justify-content: center
-                    gap: 10px 25px
-                    div 
-                        gap: 25px
 @media (max-width: 768px)
-    body, html, .main 
+    body.fixed-base, body.fixed, .modal, html.fixed-base, html.fixed, .main 
         height: -webkit-fill-available
+    .main .page__news .blocks__item .new-news .prev
+        display: none
     .title
         &_fz60, &_fz60-1 
             font-size: 26px
             line-height: 35px
+    .text-field_width
+        max-width: 93%
+    .subtitle
+        margin-top: 12px
+    .circle
+        &_810
+            width: 310px
+            height: 310px
+        &_915
+            width: 415px
+            height: 415px
+        &_944
+            width: 444px
+            height: 444px
+        &_1000
+            width: 500px
+            height: 500px
+        &_1126
+            width: 626px
+            height: 626px
+        &_1507
+            width: 807px
+            height: 807px
+        &_1272
+            width: 872px
+            height: 872px
+    .wrap
+        &_center
+            align-items: flex-start
+            padding-top: 100px
+        &_left
+            padding-left: 22px
+    .news__promo
+        justify-content: center
+        text-align: center
+        padding: 33px
+    .news__main .img_block 
+        margin: 30px 0px
+        height: 350px
+        text-align: center
+        justify-content: center
+    .title_fz48
+        font-size: 22px
+        line-height: 33px
+    .title_fz40
+        font-size: 21px
+        line-height: 31px
+    .modal
+        #message
+            .back
+                left: unset 
+                right: 0
+                top: 119px
+                height: 71%
+                max-width: unset
+                max-height: unset
+                object-fit: unset
+            .wrap
+                &.success
+                    .succ_text
+                        margin-top: 8px
+                .line 
+                    margin-top: 4px
+                    width: 271px !important
+                &_center 
+                    align-items: center
+            form 
+                padding: 20px
+                width: 305px
+                border-radius: 30px
+                .form_block
+                    margin-top: 10px
     .main
-        .text-field_width
-            max-width: 93%
-        .subtitle
-            margin-top: 12px
-        .circle
-            &_810
-                width: 310px
-                height: 310px
-            &_915
-                width: 415px
-                height: 415px
-            &_944
-                width: 444px
-                height: 444px
-            &_1000
-                width: 500px
-                height: 500px
-            &_1126
-                width: 626px
-                height: 626px
-        .wrap
-            &_center
-                align-items: flex-start
-                padding-top: 100px
-            &_left
-                padding-left: 22px
         .page
             &__promo 
                 svg, .svg 
@@ -545,25 +801,55 @@
                     top: 42%
                     grid-template: auto / repeat(3, 1fr)
 @media (max-width: 576px) 
-    body 
+    html 
+        overflow-x: hidden
+    body, .modal 
         padding: 49px 1.5% 1.5%
     .title
         &_fz60, &_fz60-1
             font-size: 19px
             line-height: 24px
-        &_fz30 
+        &_fz30, &_fz20 
             font-size: 14px
             line-height: 19px
+    .title_fz48
+        font-size: 16px
+        line-height: 22px
     .text
+        &_fz12 
+            font-size: 9px
         &_fz16, &_fz16-1
             font-size: 11px
-            line-height: 100%
+            line-height: 14px
         &_fz24 
             font-size: 13px
-            line-height: 20px
+            line-height: 17px
+    .news .pred img
+        margin-left: 10px
     .button
         &_border 
             padding: 15px 30px
+    .modal
+        &__close 
+            padding: 13px
+            top: 8px 
+            right: 7px
+            border: 9px solid rgba(19,25,37,.2)
+            &:hover
+                border: 9px solid rgba(19,25,37,.7)
+        #message
+            .wrap 
+                padding-top: 68px
+            form 
+                padding: 14px
+                width: 90%
+                max-width: 285px
+            .back
+                top: 302px
+                height: 66%
+    .wrap
+        &_center  
+            padding-top: 52px
     .header
         padding: 5px 15px
         &__burg 
@@ -574,10 +860,17 @@
             width: 125px
         &__button 
             display: none
-    .main
+    .page__like 
         .wrap
-            &_center  
-                padding-top: 52px
+            padding: 13px 10px
+    .title_fz40
+        font-size: 16px
+        line-height: 23px
+    .news__promo, .news__main, .news__main .img_block
+        padding: 20px
+    .news__main .img_block
+        height: 300px
+    .main
         &__dots
             right: 3px
             gap: 9px
@@ -634,6 +927,3 @@
                                 height: 1px
                         &-undertitle
                             margin-top: 8px
-            &__like 
-                .wrap
-                    padding: 13px 10px

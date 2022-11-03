@@ -1,38 +1,42 @@
+.page__like
+    .circle1
+        background: rgba(0, 102, 255, 0.21)
+        right: -19.12%
+        top: 77px
+    .circle2
+        left: -25.05%
+        top: 0px
+        background: rgba(223, 25, 132, 0.46)
+    .wrap
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        padding: 30px 50px
+    svg, .svg 
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        height: 95.1%
+    .bottom
+        position: absolute
+        padding: inherit
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+        color: #A6A6A6
+        bottom: 0
+        div 
+            display: flex
+            gap: 103px
+        a
+            transition: 0.3s all
+            &:hover 
+                color: #fff
 .main
     height: 100%
-    .text-field
-        &_width
-            max-width: 860px
-    .subtitle
-        margin-top: 50px
-    .circle
-        position: absolute
-        filter: blur(250px)
-        &_810
-            width: 810px
-            height: 810px
-        &_915
-            width: 915px
-            height: 915px
-        &_944
-            width: 944px
-            height: 944px
-        &_1000
-            width: 1000px
-            height: 1000px
-        &_1126
-            width: 1126px
-            height: 1126px
-    .wrap
-        &_left
-            padding-left: 50px
-            display: flex
-        &_right
-            padding-right: 50px
-            display: flex
-            justify-content: flex-end
-        &_center
-            align-items: center
     &__dots
         display: flex
         flex-direction: column
@@ -77,6 +81,14 @@
         visibility: hidden
         transform: translateY(80px)
         transition: 0.9s all ease-in-out
+        &.static
+            position: relative
+            margin-bottom: 50px
+            width: 94.79vw
+            &:last-child
+                margin-bottom: 0
+        &.static-scale
+            height: 86.11vh
         svg, .svg 
             width: auto
             z-index: -1
@@ -321,6 +333,36 @@
                 bottom: 110%
             .wrap
                 padding: 50px 8.13% 60px
+            .back-title
+                cursor: pointer
+                color: rgba(255,255,255,.7)
+                display: flex
+                align-items: center
+                z-index: 2
+                position: absolute
+                img 
+                    margin-right: 20px
+            .detail
+                padding-top: 66px
+                position: relative
+                display: flex
+                justify-content: space-between
+                align-items: flex-start
+                .prev
+                    width: 22.4%
+                p
+                    margin-bottom: 15px
+                    &:last-child
+                        margin-bottom: 0 !important
+                h4 
+                    margin: 30px 0px
+                h3 
+                    margin-left: 91px
+                .text_cont
+                    width: 75%
+                .cont_block
+                    color: #D5D4D4
+                    margin-top: 13px
             .blocks
                 display: grid
                 grid-template: auto / repeat(2, 1fr)
@@ -329,8 +371,26 @@
                     padding: 66px 0px 0px 78px
                     color: #A6A6A6
                     position: relative
+                    .new-news
+                        display: flex
+                        align-items: center
+                        .text-left
+                            width: 70%
+                        .prev
+                            width: 191px
+                            position: absolute
+                            top: 0
+                            right: 0
+                        a 
+                            display: flex
+                            align-items: center
+                            img 
+                                margin-left: 10px
+                    .new-title
+                        color: #fff
+                        cursor: pointer
                     &-content
-                        position: relative
+                        //position: relative
                         padding-bottom: 20px
                         &::after
                             position: absolute
@@ -350,40 +410,3 @@
                         z-index: 0
                     &-undertitle
                         margin-top: 30px
-        &__like
-            .circle1
-                background: rgba(0, 102, 255, 0.21)
-                right: -19.12%
-                top: 77px
-            .circle2
-                left: -25.05%
-                top: 0px
-                background: rgba(223, 25, 132, 0.46)
-            .wrap
-                display: flex
-                flex-direction: column
-                align-items: center
-                justify-content: center
-                padding: 30px 50px
-            svg, .svg 
-                position: absolute
-                top: 50%
-                left: 50%
-                transform: translate(-50%, -50%)
-                height: 95.1%
-            .bottom
-                position: absolute
-                padding: inherit
-                width: 100%
-                display: flex
-                align-items: center
-                justify-content: space-between
-                color: #A6A6A6
-                bottom: 0
-                div 
-                    display: flex
-                    gap: 103px
-                a
-                    transition: 0.3s all
-                    &:hover 
-                        color: #fff

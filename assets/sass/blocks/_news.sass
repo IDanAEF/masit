@@ -1,0 +1,81 @@
+.dash_block
+    margin-bottom: 54px
+    padding-left: 30px
+    color: #D5D4D4
+    position: relative
+    &::before
+        position: absolute
+        content: ''
+        height: 100%
+        width: 1px
+        background: #B1F6FF
+        top: 50%
+        left: 0
+        transform: translateY(-50%)
+    span
+        color: #B1F6FF
+    &:last-child
+        margin-bottom: 0 !important    
+.news
+    &__promo
+        background: url('../../../news/new1.jpg') center center/cover no-repeat
+        display: flex
+        padding: 103px
+        align-items: flex-end
+        h2 
+            position: relative
+        .circle1
+            background: rgba(41, 165, 213, 0.5)
+            right: -25.43%
+            top: -35.36%
+        .circle2
+            background: rgba(223, 25, 132, 0.46)
+            left: -16.81%
+            top: 14.07%
+    .pred
+        display: flex
+        align-items: center
+        position: relative
+        margin: 50px 0px
+        color: rgba(255, 255, 255, 0.7)
+        cursor: pointer
+        img 
+            width: 45px
+            margin-right: 20px
+    &__main 
+        padding: 50px
+        .cont
+            position: relative
+            z-index: 10
+        .circle1
+            background: rgba(88, 25, 223, 0.46)
+            right: -32.35%
+            bottom: 7.39%
+        .circle2
+            background: rgba(0, 102, 255, 0.21)
+            left: -23.24%
+            bottom: -38.56%
+        .bread
+            margin-bottom: 70px
+            color: #D5D4D4
+            span 
+                color: #9A9A9A
+        h3 
+            margin: 98px 0px 30px
+        .img_block
+            margin: 50px 0px
+            border-radius: 50px
+            width: 1194px
+            max-width: 100%
+            height: 600px
+            padding: 60px
+            background: url('../../../news/new2.png') center center/cover no-repeat
+            display: flex
+            align-items: flex-end
+        .text_block
+            margin-bottom: 50px
+            p 
+                color: #D5D4D4
+                margin-bottom: 30px
+                &:last-child
+                    margin-bottom: 0px !important

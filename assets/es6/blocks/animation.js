@@ -16,33 +16,33 @@ const animation = () => {
 
     try {
         //mouse move
-        const moveTarget = document.querySelectorAll('.circle');
+        const moveTarget = document.querySelectorAll('.mouse-move');
 
-        moveTarget.forEach(item => {
-            item.setAttribute('data-top', +window.getComputedStyle(item).top.replace('px', ''));
-
-            if (item.classList.contains('circle2')) {
-                item.setAttribute('data-left', +window.getComputedStyle(item).left.replace('px', ''));
-            } else {
-                item.setAttribute('data-right', +window.getComputedStyle(item).right.replace('px', ''));
-            }
-        });
-
-        window.addEventListener('mousemove', (e) => {
-            if (window.innerWidth >= 1024) {
-                document.querySelector('.main__page.active').querySelectorAll('.circle').forEach(item => {
-                    if (!item.classList.contains('dont-move')) {
-                        item.style.top = `${+item.getAttribute('data-top') + (e.pageY - window.innerHeight / 2) / 5}px`;
+        if (document.querySelector('main.main')) {
+            moveTarget.forEach(item => {
+                item.setAttribute('data-top', +window.getComputedStyle(item).top.replace('px', ''));
     
-                        if (item.classList.contains('circle2')) {
-                            item.style.left = `${+item.getAttribute('data-left') + (e.pageX - window.innerWidth / 2) / 11}px`;
+                if (item.classList.contains('right')) {
+                    item.setAttribute('data-right', +window.getComputedStyle(item).right.replace('px', ''));
+                } else {
+                    item.setAttribute('data-left', +window.getComputedStyle(item).left.replace('px', ''));
+                }
+            });
+    
+            window.addEventListener('mousemove', (e) => {
+                if (window.innerWidth >= 1024) {
+                    document.querySelector('.main__page.active').querySelectorAll('.mouse-move').forEach(item => {
+                        item.style.top = `${+item.getAttribute('data-top') + (e.pageY - window.innerHeight / 2) / 6}px`;
+    
+                        if (item.classList.contains('right')) {
+                            item.style.right = `${+item.getAttribute('data-right') - (e.pageX - window.innerWidth / 2) / 12}px`;
                         } else {
-                            item.style.right = `${+item.getAttribute('data-right') - (e.pageX - window.innerWidth / 2) / 11}px`;
+                            item.style.left = `${+item.getAttribute('data-left') + (e.pageX - window.innerWidth / 2) / 12}px`;
                         }
-                    }
-                });
-            }
-        });
+                    });
+                }
+            });
+        }
     } catch (e) {
         console.log(e.stack);
     }

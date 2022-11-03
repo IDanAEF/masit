@@ -1,0 +1,180 @@
+.modal
+    position: fixed
+    opacity: 0
+    visibility: hidden
+    z-index: 1000
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(0deg, #131925, #131925), #FFFFFF
+    transition: 0.5s all
+    &.active
+        opacity: 1
+        visibility: visible
+    &__close
+        position: absolute
+        padding: 26px
+        top: 2px
+        right: 2px
+        z-index: 3
+        border-radius: 100%
+        border: 15px solid rgba(19, 25, 37, 0.2)
+        cursor: pointer
+        transition: 0.4s all
+        &:hover
+            border: 15px solid rgba(19, 25, 37, 0.7)
+        &::after, &::before
+            content: ''
+            position: absolute
+            width: 40%
+            background: #fff
+            height: 2px
+            border-radius: 1px
+            top: 50%
+            left: 50%
+        &::after
+            transform: translate(-50%, -50%) rotate(45deg)
+        &::before
+            transform: translate(-50%, -50%) rotate(-45deg)
+    #message
+        position: relative
+        .wrap
+            padding-top: 119px
+            display: flex
+            flex-direction: column
+            opacity: 0
+            transform: scale(0.85)
+            transition: 0.4s all
+            position: absolute
+            &.success
+                padding-top: 0
+                justify-content: center
+                z-index: 0
+                .line
+                    width: 440px
+                .succ_text
+                    margin-top: 34px
+            &.active
+                opacity: 1
+                transform: scale(1)
+        .circle1
+            background: rgba(41, 165, 213, 0.5)
+            right: -25.43%
+            top: -35.1%
+        .circle2
+            background: rgba(223, 25, 132, 0.46)
+            left: -16.81%
+            top: 14.3%
+        .back
+            position: absolute
+            left: 13px
+            top: 50px
+            //bottom: 32px
+            // height: 90.65%
+            // width: auto
+            width: 92.41%
+            height: auto
+            max-height: 100%
+            object-fit: contain
+        .line
+            margin-top: 35px
+            height: auto
+            width: 542px
+        form 
+            padding: 50px
+            background: rgba(255, 255, 255, 0.1)
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
+            backdrop-filter: blur(25px)
+            border-radius: 50px
+            width: 432px
+            max-width: 96vw
+            .sep 
+                width: 100%
+                position: absolute
+                background: #8A9DAC
+                height: 1px
+                bottom: 0
+                left: 0
+                transition: 0.4s all
+                &::after, &::before
+                    content: ''
+                    position: absolute
+                    width: 7px
+                    height: 7px
+                    border-radius: 100%
+                    top: 50%
+                    transform: translateY(-50%)
+                    background: #8A9DAC
+                    transition: 0.4s all
+                &::before
+                    left: 0
+                &::after
+                    right: 0
+            input, textarea
+                background: none
+                border: none
+                width: 100%
+                height: 38px
+                padding: 0px 13px
+                color: #fff
+                outline: none
+                &::placeholder 
+                    color: #8A9DAC
+            textarea
+                height: 88px
+                resize: none
+            .form_block
+                margin-top: 14px
+                position: relative
+                &.checkbox
+                    color: rgba(255, 255, 255, 0.7)
+                    display: flex
+                    align-items: center
+                    label 
+                        width: 100%
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        cursor: pointer
+                    span 
+                        width: 20px
+                        height: 20px
+                        border-radius: 100%
+                        background: rgba(255, 255, 255, 0.1)
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        img 
+                            width: 55%
+                            height: auto
+                            opacity: 0
+                            transition: 0.2s all
+                    &.active
+                        span 
+                            img 
+                                opacity: 1
+                    input
+                        display: none
+                &.label-top
+                    margin-top: 24px
+                    label 
+                        position: absolute
+                        color: #8A9DAC
+                        bottom: 11px
+                        left: 13px
+                        transition: 0.4s all
+                    &.active
+                        label 
+                            color: #fff
+                            bottom: 94%
+                            opacity: 0
+                        .sep 
+                            background: #B1F6FF
+                            &::after, &::before
+                                background: #B1F6FF
+                &.checkbox, &:first-child
+                    margin-top: 0 !important
+            button 
+                margin: 35px 0px 30px
+                width: 100%

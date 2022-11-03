@@ -6,7 +6,7 @@
     $title = $page && $page['title'] ? $page['title'] : $page['name'];  
 ?>
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" <?=$_SERVER['REQUEST_URI'] == '/' ? 'class="fixed-base"' : ''?>>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="/assets/css/style.min.css">
     <title>Mas IT - <?=$title?></title>
 </head>
-<body>
-    <header class="header text_fz16-1 text_ls005 text_ffHelv">
+<body <?=$_SERVER['REQUEST_URI'] == '/' ? 'class="fixed-base"' : ''?>>
+    <header class="header text_fz16-1 text_ls005 text_ffHelv" <?=$_SERVER['REQUEST_URI'] != '/' ? 'style="position: absolute;"' : ''?>>
         <div class="header__left">
             <div class="header__burg">
                 <span></span>
@@ -23,7 +23,7 @@
                 <span></span>
             </div>
             <a href="/" class="header__logo">
-                <img src="/assets/images/green_logo.svg" alt="logo">
+                <img src="/assets/images/svg/green_logo.svg" alt="logo">
             </a>
         </div>
         <ul class="header__menu">
@@ -40,11 +40,11 @@
             ?>
         </ul>
         <div class="header__right">
-            <button class="header__button button button_green">Раcсчитать стоимость</button>
+            <button class="header__button button button_green modal-targ" data-modal="message">Раcсчитать стоимость</button>
             <div class="header__lang">
                 <a href="/en/" class="text_green">EN</a>
                 <span>RU</span>
-                <img src="/assets/images/plate_arrow_down.svg" alt="down_arrow">
+                <img src="/assets/images/svg/plate_arrow_down.svg" alt="down_arrow">
             </div>
         </div>
     </header>

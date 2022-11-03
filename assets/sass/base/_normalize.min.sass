@@ -135,8 +135,11 @@ ul
   font-family: 'Russo', sans-serif
   font-weight: 400
 html, body 
-  overflow: hidden
-body 
-  height: 100vh
+  &.fixed-base, &.fixed 
+    overflow: hidden
+body
+  overflow-x: hidden
+  &.fixed-base, &.fixed 
+    height: 100vh
 main, footer, header 
   position: relative

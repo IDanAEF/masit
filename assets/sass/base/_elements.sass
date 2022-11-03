@@ -13,6 +13,12 @@
         font-family: 'Montserrat', 'Russo', sans-serif
     &_ffHelv, &_ffHelv *
         font-family: 'Helvetica', 'Russo', sans-serif
+    &_fz12
+        font-size: 12px
+        line-height: 100%
+    &_fz14
+        font-size: 14px
+        line-height: 22px
     &_fz16
         font-size: 16px
         line-height: 24px
@@ -31,16 +37,25 @@
     &_center 
         text-align: center
 .title
+    &_fz20 
+        font-size: 20px
+        line-height: 38px
     &_fz30
         font-size: 30px
         line-height: 38px
+    &_fz40 
+        font-size: 40px
+        line-height: 48px
+    &_fz48
+        font-size: 48px
+        line-height: 60px
     &_fz60
         font-size: 60px
         line-height: 70px
     &_fz60-1
         font-size: 60px
         line-height: 90px
-body 
+body, .modal 
     background: #131925
     padding: 100px 2.6% 2.6%
 .button
@@ -81,3 +96,43 @@ body
             bottom: 0
 .svg
     pointer-events: none
+.text-field
+    &_width
+        max-width: 860px
+.subtitle
+    margin-top: 50px
+.circle
+    position: absolute
+    -webkit-backdrop-filter: blur(250px)
+    filter: blur(250px)
+    &_810
+        width: 810px
+        height: 810px
+    &_915
+        width: 915px
+        height: 915px
+    &_944
+        width: 944px
+        height: 944px
+    &_1000
+        width: 1000px
+        height: 1000px
+    &_1126
+        width: 1126px
+        height: 1126px
+    &_1507
+        width: 1507px
+        height: 1507px
+    &_1272
+        width: 1272px
+        height: 1272px
+.wrap
+    &_left
+        padding-left: 50px
+        display: flex
+    &_right
+        padding-right: 50px
+        display: flex
+        justify-content: flex-end
+    &_center
+        align-items: center
