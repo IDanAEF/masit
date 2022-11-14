@@ -9,7 +9,7 @@ import mask from "./blocks/mask";
 window.addEventListener('DOMContentLoaded', () => {
     pages();
     animation();
-    forms();
     mask('input[type="tel"]');
+    forms();
     other();
 });

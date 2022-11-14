@@ -1,9 +1,9 @@
 <?php require 'header.php'; ?>
-<main class="main">
+<main class="main slider-page menu-activity">
     <div class="main__dots">
         <!-- pages.js -->
     </div>
-    <section class="main__page page__promo count">
+    <section class="main__page page__promo slider-page-item">
         <div class="circle circle_915 circle1 mouse-move right"></div>
         <div class="circle circle_810 circle2 mouse-move"></div>
         <div class="circle circle_810 circle3"></div>
@@ -21,7 +21,7 @@
             <?php //include('assets/images/svg/block1.svg') ?>
         </div>
     </section>
-    <section class="main__page page__design count">
+    <section class="main__page page__design slider-page-item">
         <div class="circle circle_1000 circle1 mouse-move right"></div>
         <div class="circle circle_810 circle2 mouse-move"></div>
         <div class="circle circle_1126 circle3"></div>
@@ -37,7 +37,7 @@
             <?php //include('assets/images/svg/block2.svg') ?>
         </div>
     </section>
-    <section class="main__page page__brand count">
+    <section class="main__page page__brand slider-page-item">
         <div class="circle circle_1126 circle1 mouse-move right"></div>
         <div class="circle circle_1000 circle2 mouse-move"></div>
         <div class="circle circle_1126 circle3"></div>
@@ -52,7 +52,7 @@
             <?php //include('assets/images/svg/block3.svg') ?>
         </div>
     </section>
-    <section class="main__page page__cross count">
+    <section class="main__page page__cross slider-page-item">
         <div class="circle circle_1000 circle1 mouse-move right"></div>
         <div class="circle circle_1126 circle2 mouse-move"></div>
         <div class="circle circle_1126 circle3"></div>
@@ -67,7 +67,7 @@
             <?php //include('assets/images/svg/block4.svg') ?>
         </div>
     </section>
-    <section class="main__page page__mobile count">
+    <section class="main__page page__mobile slider-page-item">
         <div class="circle circle_1126 circle1 mouse-move right"></div>
         <div class="circle circle_1000 circle2 mouse-move"></div>
         <div class="circle circle_1126 circle3"></div>
@@ -83,7 +83,7 @@
             <?php //include('assets/images/svg/block5.svg') ?>
         </div>
     </section>
-    <section class="main__page page__mark count">
+    <section class="main__page page__mark slider-page-item">
         <div class="circle circle_1000 circle1 mouse-move right"></div>
         <div class="circle circle_1126 circle2 mouse-move"></div>
         <div class="circle circle_944 circle3"></div>
@@ -99,7 +99,7 @@
             <?php //include('assets/images/svg/block6.svg') ?>
         </div>
     </section>
-    <section class="main__page page__proc count">
+    <section class="main__page page__proc slider-page-item">
         <div class="circle circle_944 circle1 mouse-move right"></div>
         <div class="circle circle_1000 circle2 mouse-move"></div>
         <div class="circle circle_1126 circle3"></div>
@@ -151,7 +151,7 @@
             <?php //include('assets/images/svg/gray_logo.svg'); ?>
         </div>
     </section>
-    <section class="main__page page__news count">
+    <section class="main__page page__news slider-page-item">
         <div class="circle circle_944 circle1 mouse-move right"></div>
         <div class="circle circle_1000 circle2 mouse-move"></div>
         <div class="circle circle_944 circle3"></div>
@@ -163,7 +163,7 @@
                     <div class="blocks__item-number">01</div>
                     <div class="blocks__item-content new-news">
                         <div class="text-left">
-                            <h3 class="blocks__item-title title_fz20 text_upper text_ls005 new-title"><a href="/news/">Что такое Google Custom Intent Audiences? 5 способов ее использования</a></h3>
+                            <h3 class="blocks__item-title title_fz20 text_upper text_ls005 new-title" data-new="01"><a href="/news/">Что такое Google Custom Intent Audiences? 5 способов ее использования</a></h3>
                             <a href="/news/" class="blocks__item-undertitle text_fz16 text_ffMont text_white">Читать<img src="/assets/images/svg/arrow_read.svg" alt=""></a>
                         </div>
                         <img src="/assets/images/prev.png" alt="" class="prev">
@@ -193,7 +193,7 @@
             </div>
         </div>
     </section>
-    <section class="main__page page__like count">
+    <section class="main__page page__like slider-page-item">
         <div class="circle circle_1000 circle1 mouse-move right"></div>
         <div class="circle circle_944 circle2 mouse-move"></div>
         <div class="main__page-wrap wrap text_center">
@@ -211,7 +211,7 @@
             </div>
         </div>
     </section>
-    <section class="main__page page__news new-news-cont">
+    <section class="main__page page__news new-news-cont" data-new="01">
         <div class="circle circle_944 circle1 mouse-move right"></div>
         <div class="circle circle_1000 circle2 mouse-move"></div>
         <div class="circle circle_944 circle3"></div>

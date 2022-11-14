@@ -1,9 +1,9 @@
 <?php require 'header.php'; ?>
-<main class="main">
+<main class="main slider-page menu-activity">
     <div class="main__dots">
         <!-- pages.js -->
     </div>
-    <section class="main__page page__promo count">
+    <section class="main__page page__promo slider-page-item">
         <div class="circle circle_915 circle1 mouse-move right"></div>
         <div class="circle circle_810 circle2 mouse-move"></div>
         <div class="circle circle_810 circle3"></div>
@@ -21,7 +21,7 @@
             <?php //include('assets/images/svg/block1.svg') ?>
         </div>
     </section>
-    <section class="main__page page__design count">
+    <section class="main__page page__design slider-page-item">
         <div class="circle circle_1000 circle1 mouse-move right"></div>
         <div class="circle circle_810 circle2 mouse-move"></div>
         <div class="circle circle_1126 circle3"></div>
@@ -37,7 +37,7 @@
             <?php //include('../assets/images/svg/block2.svg') ?>
         </div>
     </section>
-    <section class="main__page page__brand count">
+    <section class="main__page page__brand slider-page-item">
         <div class="circle circle_1126 circle1 mouse-move right"></div>
         <div class="circle circle_1000 circle2 mouse-move"></div>
         <div class="circle circle_1126 circle3"></div>
@@ -52,7 +52,7 @@
             <?php //include('../assets/images/svg/block3.svg') ?>
         </div>
     </section>
-    <section class="main__page page__cross count">
+    <section class="main__page page__cross slider-page-item">
         <div class="circle circle_1000 circle1 mouse-move right"></div>
         <div class="circle circle_1126 circle2 mouse-move"></div>
         <div class="circle circle_1126 circle3"></div>
@@ -67,7 +67,7 @@
             <?php //include('../assets/images/svg/block4.svg') ?>
         </div>
     </section>
-    <section class="main__page page__mobile count">
+    <section class="main__page page__mobile slider-page-item">
         <div class="circle circle_1126 circle1 mouse-move right"></div>
         <div class="circle circle_1000 circle2 mouse-move"></div>
         <div class="circle circle_1126 circle3"></div>
@@ -83,7 +83,7 @@
             <?php //include('assets/images/svg/block5.svg') ?>
         </div>
     </section>
-    <section class="main__page page__mark count">
+    <section class="main__page page__mark slider-page-item">
         <div class="circle circle_1000 circle1 mouse-move right"></div>
         <div class="circle circle_1126 circle2 mouse-move"></div>
         <div class="circle circle_944 circle3"></div>
@@ -99,7 +99,7 @@
             <?php //include('assets/images/svg/block6.svg') ?>
         </div>
     </section>
-    <section class="main__page page__proc count">
+    <section class="main__page page__proc slider-page-item">
         <div class="circle circle_944 circle1 mouse-move right"></div>
         <div class="circle circle_1000 circle2 mouse-move"></div>
         <div class="circle circle_1126 circle3"></div>
@@ -151,7 +151,7 @@
             <?php //include('../assets/images/svg/gray_logo.svg'); ?>
         </div>
     </section>
-    <section class="main__page page__news count">
+    <section class="main__page page__news slider-page-item">
         <div class="circle circle_944 circle1 mouse-move right"></div>
         <div class="circle circle_1000 circle2 mouse-move"></div>
         <div class="circle circle_944 circle3"></div>
@@ -193,14 +193,14 @@
             </div>
         </div>
     </section>
-    <section class="main__page page__like count">
+    <section class="main__page page__like slider-page-item">
         <div class="circle circle_1000 circle1 mouse-move right"></div>
         <div class="circle circle_944 circle2 mouse-move"></div>
         <div class="main__page-wrap wrap text_center">
             <?php //include('../assets/images/svg/block9.svg') ?>
             <img src="/assets/images/block9.png" alt="" class="svg fade">
             <h2 class="title title_fz60 text_white-1 text_upper text_ls01 fade fade-top">Do you like what you see?</h2>
-            <button class="button button_green text_fz16-1 text_ffHelv text_ls005 subtitle fade fade-bott">Сalculate the cost</button>
+            <button class="button button_green text_fz16-1 text_ffHelv text_ls005 subtitle fade fade-bott modal-targ" data-modal="message">Сalculate the cost</button>
             <div class="bottom text text_fz16 text_ffMont fade">
                 <span>© <?=date('Y')?> Mas It. All rights reserved</span>
                 <div>

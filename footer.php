@@ -1,3 +1,4 @@
+<?=!in_array($_SERVER['REQUEST_URI'], $pageWithDots) ? '</div>' : ''?>
 <div class="modal">
     <div class="modal__item main__page" id="message">
         <div class="modal__close"></div>
@@ -19,8 +20,8 @@
                     <div class="sep"></div>
                 </div>
                 <div class="form_block label-top">
-                    <label for="feedmail">Email</label>
-                    <input id="feedmail" type="email" name="feedmail">
+                    <label for="feedmail">Email <span class="text_green">*</span></label>
+                    <input id="feedmail" type="email" name="feedmail" required>
                     <div class="sep"></div>
                 </div>
                 <div class="form_block">

@@ -1,7 +1,7 @@
 <?php
     if ($_POST) {
-        $to = "efr3m0vden@yandex.ru"; 
-        $from = "efr3m0vden@yandex.ru";
+        $to = "masitoffice@icloud.com"; 
+        $from = "masitoffice@icloud.com";
         $subject = "Mas It: Сообщение с формы обратной связи (Расчитать стоимость)"; 
         $messText = "
             Имя: ".$_POST['feedname']."

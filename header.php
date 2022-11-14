@@ -1,21 +1,25 @@
 <?php
     require 'data.php';
+
+    $pageWithDots = ['/', '/projects/'];
     
     $page = $pagesData[$_SERVER['REQUEST_URI']];
 
     $title = $page && $page['title'] ? $page['title'] : $page['name'];  
 ?>
 <!DOCTYPE html>
-<html lang="ru" <?=$_SERVER['REQUEST_URI'] == '/' ? 'class="fixed-base"' : ''?>>
+<html lang="ru" <?=in_array($_SERVER['REQUEST_URI'], $pageWithDots) ? 'class="fixed-base"' : ''?>>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/style.min.css">
     <title>Mas IT - <?=$title?></title>
 </head>
-<body <?=$_SERVER['REQUEST_URI'] == '/' ? 'class="fixed-base"' : ''?>>
-    <header class="header text_fz16-1 text_ls005 text_ffHelv" <?=$_SERVER['REQUEST_URI'] != '/' ? 'style="position: absolute;"' : ''?>>
+<body <?=in_array($_SERVER['REQUEST_URI'], $pageWithDots) ? 'class="fixed-base"' : ''?>>
+    <?=!in_array($_SERVER['REQUEST_URI'], $pageWithDots) ? '<div class="wrapper">' : ''?>
+    <header class="header text_fz16-1 text_ls005 text_ffHelv" <?=!in_array($_SERVER['REQUEST_URI'], $pageWithDots) ? 'style="position: absolute;"' : ''?>>
         <div class="header__left">
             <div class="header__burg">
                 <span></span>
@@ -29,6 +33,7 @@
         <ul class="header__menu">
             <?php
                 foreach($pagesData as $key => $item) {
+                    if ($item['menu']) {
                     ?>
                     <li class="header__menu-item<?=($_SERVER['REQUEST_URI'] == $key ? ' active' : '')?>">
                         <a href="<?=$key?>">
@@ -36,6 +41,7 @@
                         </a>
                     </li>
                     <?php
+                    }
                 }
             ?>
         </ul>

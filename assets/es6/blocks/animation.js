@@ -18,7 +18,7 @@ const animation = () => {
         //mouse move
         const moveTarget = document.querySelectorAll('.mouse-move');
 
-        if (document.querySelector('main.main')) {
+        if (document.querySelector('main.slider-page')) {
             moveTarget.forEach(item => {
                 item.setAttribute('data-top', +window.getComputedStyle(item).top.replace('px', ''));
     

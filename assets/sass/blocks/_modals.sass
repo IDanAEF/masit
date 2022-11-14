@@ -86,6 +86,7 @@
             background: rgba(255, 255, 255, 0.1)
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
             backdrop-filter: blur(25px)
+            transform: translate3d(0, 0, 0)
             border-radius: 50px
             width: 432px
             max-width: 96vw
@@ -131,6 +132,7 @@
                     color: rgba(255, 255, 255, 0.7)
                     display: flex
                     align-items: center
+                    position: relative
                     label 
                         width: 100%
                         display: flex
@@ -155,7 +157,10 @@
                             img 
                                 opacity: 1
                     input
-                        display: none
+                        position: absolute
+                        left: 0
+                        width: fit-content
+                        opacity: 0
                 &.label-top
                     margin-top: 24px
                     label 

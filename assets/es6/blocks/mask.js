@@ -42,7 +42,7 @@ const mask = (selector) => {
 
     inputs.forEach(input => {
         input.addEventListener('input', createMask);
-        input.addEventListener('focus', createMask);
+        //input.addEventListener('focus', createMask);
         input.addEventListener('blur', createMask);
     });
 };

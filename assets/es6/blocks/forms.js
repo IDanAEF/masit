@@ -8,11 +8,17 @@ const forms = () => {
         return await res.text();
     }
 
+    const resetForm = (form, blocks) => {
+        form.reset();
+
+        blocks.forEach(item => item.classList.remove('active'));
+    }
+
     try {
         const formBlock = document.querySelectorAll('.form_block');
 
         formBlock.forEach(block => {
-            const blockInp = block.querySelector('input');
+            const blockInp = block.querySelector('input, textarea');
 
             if (block.classList.contains('label-top')) {
                 blockInp.addEventListener('focus', () => {
@@ -49,6 +55,7 @@ const forms = () => {
             .then(() => {
                 messBlock.querySelector('.wrap').classList.remove('active');
                 messBlock.querySelector('.wrap.success').classList.add('active');
+                resetForm(messForm, messForm.querySelectorAll('.form_block'));
             });
         });
     } catch (e) {
