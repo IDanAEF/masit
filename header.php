@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/assets/css/style.min.css">
     <title>Mas IT - <?=$title?></title>
 </head>
-<body <?=in_array($_SERVER['REQUEST_URI'], $pageWithDots) ? 'class="fixed-base"' : ''?>>
+<body data-home="/" <?=in_array($_SERVER['REQUEST_URI'], $pageWithDots) ? 'class="fixed-base"' : ''?>>
     <?=!in_array($_SERVER['REQUEST_URI'], $pageWithDots) ? '<div class="wrapper">' : ''?>
     <header class="header text_fz16-1 text_ls005 text_ffHelv" <?=!in_array($_SERVER['REQUEST_URI'], $pageWithDots) ? 'style="position: absolute;"' : ''?>>
         <div class="header__left">

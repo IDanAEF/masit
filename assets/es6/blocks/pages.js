@@ -85,6 +85,10 @@ const pages = () => {
 
                         num = i;
                         setPage();
+                    } else {
+                        e.preventDefault();
+
+                        window.location.href = document.querySelector('body').getAttribute('data-home');
                     }
                 });
             });
