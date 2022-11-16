@@ -576,6 +576,8 @@
         display: none
     .main .page__news .detail .text_cont
         width: 100%
+    .mobile-menu
+        display: flex
     .text
         &_fz12 
             font-size: 10px
@@ -1073,8 +1075,10 @@
                 &_image 
                     bottom: 15%
 @media (max-width: 768px)
-    body.fixed-base, body.fixed, .modal, html.fixed-base, html.fixed, .main 
-        height: -webkit-fill-available
+    body.fixed-base, body.fixed, .modal, html.fixed-base, html.fixed, .main
+        // max-height: -webkit-fill-available
+        // height: 100vh
+        height: 100%
     .main .page__news .blocks__item .new-news .prev
         display: none
     .title
@@ -1281,6 +1285,12 @@
         padding: 49px 1.5% 1.5%
     .wrapper
         padding: 49px 0px 1.5%
+    .mobile-menu
+        padding: 9%
+        &__list 
+            height: 68%
+            a 
+                font-size: 20px
     .title
         &_fz30, &_fz20 
             font-size: 14px
@@ -1345,6 +1355,13 @@
     .page__like 
         .wrap
             padding: 13px 10px
+        .info 
+            margin-top: 13px
+            gap: 9px
+            flex-direction: column
+            a 
+                img 
+                    margin-right: 9px
     .news__promo, .news__main, .news__main .img_block
         padding: 20px
     .news__main .img_block
@@ -1497,3 +1514,6 @@
                     width: 100%
                     max-width: 350px
                     margin: 13px 0px
+@media (max-width: 400px)
+    .mobile-menu
+        width: 100%

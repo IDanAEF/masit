@@ -4,6 +4,7 @@ const pages = () => {
               mainPages = document.querySelectorAll('.slider-page-item'),
               dotsField = document.querySelector('.main__dots'),
               menuItems = document.querySelectorAll('.header__menu-item'),
+              mobileMItems = document.querySelectorAll('.mobile-menu__item'),
               //promoBtn = document.querySelector('.page__promo .button'),
               newsCont = document.querySelectorAll('.new-news-cont');
 
@@ -37,6 +38,11 @@ const pages = () => {
 
             dots[num].classList.add('active');
             mainPages[num].classList.add('active');
+
+            isModal = false;
+            document.querySelector('body').classList.remove('fixed');
+
+            document.querySelector('.mobile-menu').classList.remove('active');
         }
         
         const moveAnim = (cord) => {
@@ -68,19 +74,10 @@ const pages = () => {
             }
         }
 
-        if (sliderPagePlace) {
-            setPage();
-
-            dots.forEach((item, i) => {
-                item.addEventListener('click', () => {
-                    num = i;
-                    setPage();
-                });
-            });
-
-            menuItems.forEach((item, i) => {
+        const menuAct = (mitems) => {
+            mitems.forEach((item, i) => {
                 item.addEventListener('click', (e) => {
-                    if (sliderPagePlace.classList.contains('menu-activity')) {
+                    if (sliderPagePlace && sliderPagePlace.classList.contains('menu-activity')) {
                         e.preventDefault();
 
                         num = i;
@@ -90,6 +87,20 @@ const pages = () => {
 
                         window.location.href = document.querySelector('body').getAttribute('data-home');
                     }
+                });
+            });
+        }
+
+        menuAct(menuItems);
+        menuAct(mobileMItems);
+
+        if (sliderPagePlace) {
+            setPage();
+
+            dots.forEach((item, i) => {
+                item.addEventListener('click', () => {
+                    num = i;
+                    setPage();
                 });
             });
 
@@ -128,7 +139,7 @@ const pages = () => {
         const modal = document.querySelector('.modal'),
               targetBtn = document.querySelectorAll('.modal-targ'),
               newTitle = document.querySelectorAll('.new-title'),
-              backTitle = document.querySelector('.back-title');
+              backTitle = document.querySelectorAll('.back-title');
 
         if (newTitle.length > 0) {
             newTitle.forEach(title => {
@@ -141,9 +152,15 @@ const pages = () => {
                 });
             });
 
-            backTitle.addEventListener('click', () => {
-                setPage();
+            backTitle.forEach(bitem => {
+                bitem.addEventListener('click', () => {
+                    setPage();
+                });
             });
+
+            // backTitle.addEventListener('click', () => {
+            //     setPage();
+            // });
         }
 
         targetBtn.forEach(btn => {
@@ -152,6 +169,7 @@ const pages = () => {
 
                 if (modalItem) {
                     isModal = true;
+                    document.querySelector('.mobile-menu').classList.remove('active');
                     //mainPages.forEach(item => item.classList.remove('active'));
                     document.querySelector('body').classList.add('fixed');
 
@@ -174,6 +192,24 @@ const pages = () => {
                 modal.querySelector('#message .wrap.success').classList.remove('active');
                 modal.classList.remove('active');
             }
+        });
+
+        //mobile menu
+        const mobileMenu = document.querySelector('.mobile-menu'),
+              hamb = document.querySelector('.header__burg'),
+              mobileClose = mobileMenu.querySelector('.mobile-menu__close');
+
+        hamb.addEventListener('click', () => {
+            document.querySelector('body').classList.add('fixed');
+
+            mobileMenu.classList.add('active');
+        });
+
+        mobileClose.addEventListener('click', () => {
+            isModal = false;
+            document.querySelector('body').classList.remove('fixed');
+
+            mobileMenu.classList.remove('active');
         });
     } catch (e) {
         console.log(e.stack);

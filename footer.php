@@ -1,5 +1,29 @@
 <?=!in_array($_SERVER['REQUEST_URI'], $pageWithDots) ? '</div>' : ''?>
 <div class="modal">
+    <?php
+        $ip = '';
+        if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+            $ip = $_SERVER['HTTP_CLIENT_IP'];
+        } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+            $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+        } else {
+            $ip = $_SERVER['REMOTE_ADDR'];
+        }
+                                        
+        $countryData = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='.$ip));
+        $phonePlace = '';
+        $phoneMask = '';
+
+        $masks = json_decode(file_get_contents(__DIR__.'/countryes.json'), true);
+                                        
+        for ($c = 0; $c < count($masks); $c++) {
+            if ($masks[$c]['iso'] == $countryData['geoplugin_countryCode']) {
+                $phonePlace = $masks[$c]['code'].' '.str_replace('#', '_', (is_array($masks[$c]['mask']) ? $masks[$c]['mask'][0] : $masks[$c]['mask']));
+                $phoneMask = $masks[$c]['code'].' '.str_replace('#', '9', (is_array($masks[$c]['mask']) ? $masks[$c]['mask'][0] : $masks[$c]['mask']));
+                break;
+            }
+        }
+    ?>
     <div class="modal__item main__page" id="message">
         <div class="modal__close"></div>
         <div class="circle circle_915 circle1 mouse-move right"></div>
@@ -15,8 +39,8 @@
                     <div class="sep"></div>
                 </div>
                 <div class="form_block label-top">
-                    <label for="feedphone">+7 (___) ___-__-__ <span class="text_green">*</span></label>
-                    <input id="feedphone" type="tel" name="feedphone" data-format="+7 (___) ___-__-__" required>
+                    <label for="feedphone"><?=$phonePlace ? $phonePlace : '+7 (___) ___-__-__' ?> <span class="text_green">*</span></label>
+                    <input id="feedphone" type="tel" name="feedphone" data-format="<?=$phonePlace ? $phonePlace : '+7 (___) ___-__-__' ?>" required>
                     <div class="sep"></div>
                 </div>
                 <div class="form_block label-top">
@@ -42,6 +66,31 @@
             <div class="succ_text text_fz24 text_white text_ffMont">Ваше сообщение отправлено</div>
         </div>
     </div>
+</div>
+<div class="mobile-menu">
+    <div class="mobile-menu__close">
+        <span></span>
+        <span></span>
+    </div>
+    <a href="/" class="header__logo">
+        <img src="/assets/images/svg/green_logo.svg" alt="logo">
+    </a>
+    <ul class="mobile-menu__list">
+        <?php
+            foreach($pagesData as $key => $item) {
+                if ($item['menu']) {
+                ?>
+                <li class="mobile-menu__item title_fz30 text_ffHelv text_white<?=($_SERVER['REQUEST_URI'] == $key ? ' active' : '')?>">
+                    <a href="<?=$key?>">
+                        <?=$item['name']?>
+                    </a>
+                </li>
+                <?php
+                }
+            }
+        ?>
+    </ul>
+    <button class="mobile-menu__button text_fz16-1 text_ls005 text_ffHelv button button_green modal-targ" data-modal="message">Раcсчитать стоимость</button>
 </div>
 <script src="/assets/js/script.js"></script>
 </body>

@@ -1,4 +1,4 @@
-<?php require '../header.php'; ?>
+<?php require '../../header.php'; ?>
 <main class="news">
     <section class="main__page news__promo static static-scale active">
         <div class="circle circle_915 circle1"></div>
@@ -38,7 +38,7 @@
         </div>
     </section>
     <a href="/en/" class="pred text_fz16 text_ffHelv text_ls005">
-        <img src="/assets/images/svg/pred.svg" alt=""> Предыдущая новость
+        <img src="/assets/images/svg/pred.svg" alt=""> Previous news
     </a>
     <section class="main__page page__like news__like static static-scale active">
         <div class="circle circle_1000 circle1"></div>
@@ -48,6 +48,10 @@
             <img src="/assets/images/svg/block9.svg" alt="" class="svg">
             <h2 class="title title_fz60 text_white-1 text_upper text_ls01">Do you like what you see?</h2>
             <button class="button button_green text_fz16-1 text_ffHelv text_ls005 subtitle modal-targ" data-modal="message">Сalculate the cost</button>
+            <div class="info text_fz18 text_white text_ffHelv text_ls005">
+                <a href="tel:79054250655" class="phone"><img src="/assets/images/phone.svg" alt="phone">+7 905 425-06-55</a>
+                <a href="mailto:office@masit.world" class="mail"><img src="/assets/images/mail.svg" alt="mail"> office@masit.world</a>
+            </div>
             <div class="bottom text text_fz16 text_ffMont">
                 <span>© <?=date('Y')?> Mas It. All rights reserved</span>
                 <div>
@@ -59,4 +63,4 @@
         </div>
     </section>
 </main>
-<?php require '../footer.php'; ?>
+<?php require '../../footer.php'; ?>
