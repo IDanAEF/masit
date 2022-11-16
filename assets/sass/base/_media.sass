@@ -295,6 +295,8 @@
                             width: 230px
     .projects
         &__meha 
+            .meha_image
+                max-width: 91%
             .bott 
                 left: 11%
                 bottom: 8%
@@ -346,25 +348,37 @@
         &__galant 
             .descr
                 width: 630px
+            .wrap
+                padding-top: 4vh
             .galant
                 &_logo 
-                    width: 850px
+                    width: 700px
                     margin: 20px 0px
                 &_image 
-                    width: 87%
-                    bottom: -57px
-                    right: 64px
-@media (max-width: 1600px) 
+                    //width: 87%
+                    width: auto
+                    height: 70%
+                    transform: translateX(50%) !important
+                    bottom: 1%
+                    //right: 64px
+                    right: 50%
+                    max-width: 2137px
+                    object-fit: contain
+@media (max-width: 1600px), (max-height: 800px) 
     body, .modal 
         padding: 90px 1.5% 1.6%
     .wrapper
         padding: 90px 0px 1.6%
     .header
         padding: 10px 40px
-    .main .page__news .detail h3
-        margin-left: 20px
-    .main .page__news .detail h4
-        margin: 12px 0px
+    .main 
+        .page
+            &__news 
+                .detail 
+                    h3
+                        margin-left: 20px
+                    h4
+                        margin: 12px 0px
     .circle
         &_810
             width: 710px
@@ -387,23 +401,20 @@
         &_1272
             width: 1072px
             height: 1072px
+    .projects
+        &__bim 
+            .bim 
+                &_image
+                    width: auto
+                    height: 55%
+                    max-width: 57%
+                    object-fit: contain
+        &__galant 
+            .galant
+                &_image 
+                    max-width: 1941px
+                    bottom: 3%
 @media (max-width: 1400px), (max-height: 770px) 
-    .main .page__news .blocks__item .new-news .prev
-        width: 148px
-    .main .page__news .detail .cont_block
-        margin-top: 0
-    .main .page__news .detail p
-        margin-bottom: 5px
-    .main .page__news .detail h4
-        n: 8px 0px
-    .main .page__news .detail .text_cont
-        width: 78%
-    .main .page__news .detail .prev
-        width: 20%
-    .main .page__news .detail
-        padding-top: 16px
-    .main .page__news .detail .blocks__item-number
-        display: none
     body, .modal 
         padding: 80px 1.5% 1.5%
     .wrapper
@@ -463,8 +474,25 @@
                 .main__page-text
                     max-width: 500px
             &__news 
+                .detail 
+                    padding-top: 16px
+                    .cont_block
+                        margin-top: 0
+                    p
+                        margin-bottom: 5px
+                    h4
+                        n: 8px 0px
+                    .text_cont
+                        width: 78%
+                    .prev
+                        width: 20%
+                    .blocks__item-number
+                        display: none
                 .blocks
                     &__item 
+                        .new-news 
+                            .prev
+                                width: 148px
                         &-number 
                             font-size: 72px
                             line-height: 82px
@@ -472,6 +500,8 @@
                             margin-top: 13px
     .projects
         &__meha 
+            .meha_image
+                max-width: 91%
             .bott
                 .title
                     font-size: 28px
@@ -524,13 +554,17 @@
                 &_logo 
                     width: 51%
                 &_image
-                    width: 49%
+                    //width: 49%
+                    max-width: 58%
         &__galant
             .wrap
-                padding-top: 32px
+                //padding-top: 32px
+                padding-top: 4vh
             .descr
                 width: 530px
             .galant
+                &_image 
+                    max-width: 1735px
                 &_logo
                     width: 650px 
 @media (max-width: 1260px) 
@@ -733,7 +767,8 @@
                         width: 102px
             .meha
                 &_image 
-                    max-width: 903px
+                    //max-width: 903px
+                    max-width: 94%
                     object-fit: contain
                     height: 88%
                     right: -20px
@@ -773,7 +808,7 @@
                 width: 400px
             .bim
                 &_image 
-                    width: 58%
+                    //width: 58%
                     bottom: 7%
                     left: 15px
                 &_logo 
@@ -798,6 +833,18 @@
                     transform: translateX(50%) !important
                     max-width: 1404px
                     object-fit: contain
+@media (max-width: 1260px) and (min-height: 950px) 
+    .projects
+        &__bim 
+            .bim
+                &_image 
+                    max-width: 77%
+@media (max-width: 1260px) and (max-height: 630px) 
+    .projects
+        &__galant 
+            .galant 
+                &_image 
+                    bottom: -37px
 @media (max-width: 992px)
     body, .modal 
         padding: 58px 1.5% 1.5%
@@ -933,6 +980,7 @@
                     height: 70%
                     //width: 88%
                     right: -13px
+                    max-width: 903px
         &__sun 
             .wrap 
                 flex-direction: column
@@ -994,7 +1042,8 @@
                     //width: 68%
                     width: auto
                     height: 50%
-                    max-height: 392px
+                    //max-height: 392px
+                    max-width: 83%
                     bottom: -4%
                     left: -54px
         &__galant 
@@ -1011,7 +1060,18 @@
                     height: 65%
                     max-height: 491px
                     bottom: 3%
-                    max-width: 1043px
+                    //max-width: 1043px
+                    max-width: 137%
+@media (max-width: 992px) and (min-height: 850px)
+    .projects
+        &__bim 
+            .bim
+                &_image 
+                    bottom: 6%
+        &__galant 
+            .galant
+                &_image 
+                    bottom: 15%
 @media (max-width: 768px)
     body.fixed-base, body.fixed, .modal, html.fixed-base, html.fixed, .main 
         height: -webkit-fill-available
@@ -1169,6 +1229,9 @@
             &_p100 
                 padding: 8vh 4%
         &__meha
+            .top
+                .meha_text
+                    width: 332px
             .meha
                 &_image 
                     bottom: 16%
@@ -1197,6 +1260,20 @@
                     transform: unset !important
                     bottom: 12%
                     right: -122px
+                    max-width: 157%
+@media (max-width: 768px) and (min-height: 800px) 
+    .projects
+        &__bim 
+            .bim 
+                &_image 
+                    bottom: 3%
+                    left: -100px
+                    height: 61%
+                    max-width: 96%
+        &__galant 
+            .galant
+                &_image 
+                    bottom: 20%
 @media (max-width: 576px) 
     html 
         overflow-x: hidden
@@ -1333,7 +1410,8 @@
         &__meha 
             .top
                 .meha_text
-                    width: 70%
+                    //width: 70%
+                    width: 225px
                 .title
                     margin-top: 10px
             .meha_image
@@ -1396,7 +1474,7 @@
                 &_image
                     height: 43%
                     bottom: 10%
-                    left: -104px
+                    left: 0
                 &_full-logo
                     width: 75%
                     margin: 11px 0px
@@ -1414,6 +1492,7 @@
                     bottom: 11%
                     right: -108px
                     height: 55%
+                    max-width: unset
                 &_logo 
                     width: 100%
                     max-width: 350px

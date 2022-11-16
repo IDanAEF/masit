@@ -114,7 +114,7 @@
             <img src="/assets/images/projects/galant_image.png" alt="galant_image" class="galant_image fade fade-top">
             <div class="galant_text">
                 <h2 class="title title_fz40 text_upper text_ls45 text_fw700 fade fade-top">Российская<br>косметическая компания</h2>
-                <img src="/assets/images/projects/galant_logo.svg" alt="galant_logo" class="galant_logo fade fade-bott">
+                <img src="/assets/images/projects/galant_logo.png" alt="galant_logo" class="galant_logo fade fade-bott">
                 <div class="descr fade">
                 Компания «Галант Косметик» является лидером в сфере разработки и производства косметических средств
                 </div>
